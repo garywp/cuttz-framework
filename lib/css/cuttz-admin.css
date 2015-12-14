@@ -1,0 +1,412 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.gl-section,.postbox .inside {
+pposition:static;
+}
+
+.cuttz-color-picker{
+background:white;
+border-radius:200px;
+bbox-shadow:2px 3px 10px rgba(0,0,0,.5);
+box-shadow:2px 3px 50px white !important;
+bborder:20px solid white;
+}
+
+.gl-section label{
+	display:block;
+}
+
+.gl-label{ 
+padding-right:2em;
+min-width:200px;
+}
+
+/* Styles for Widget Areas section */
+#fwidget-count{
+	ddisplay: inline-block;
+	mmargin-left: 20px;
+}
+
+td.cuttz-input.gl-fw-select{
+	vertical-align: middle;
+}
+
+td#layoutwidths label,
+.gl-cta-table label {
+display: inline;
+}
+
+.gl-section td,
+#cuttz-branding-form th,
+#cuttz-branding-form td{
+vertical-align:top;
+}
+#cuttz-branding-form th,
+#cuttz-branding-form td {
+padding: .318em .618em !important;
+}
+#cuttz-branding-form p {
+margin-top:0;
+margin-bottom: 1.618em;
+}
+
+.gl-cta-table {
+width:100%;
+}
+.gl-section label#label-layout-pagewidth,
+.gl-section label#label-layout-fullwidth {
+display:inline-block;
+}
+
+.gl-section .tip {
+padding:.618em;
+max-width:300px;
+color:#dd823b;
+height:100%;
+border-radius:10px;
+background:#3498db;
+color:#fff;
+padding-left:1em;
+padding-right:1em;
+visibility:hidden;
+}
+.gl-section #preview {
+display:table;
+padding:0.618em 1em;
+text-align:center;
+font-weight:bold;
+border:3px double #aaa;
+text-decoration:none;
+bborder-radius:3px;
+background-color: #eeeeee;
+background-image: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%);
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc));
+background-image: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%);
+background-image: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%);
+background-image: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%);
+background-image: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
+}
+
+.gl-section #preview:hover {
+background-color: #cccccc;
+background-image: -moz-linear-gradient(top,  #cccccc 0%, #eeeeee 100%);
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cccccc), color-stop(100%,#eeeeee));
+background-image: -webkit-linear-gradient(top,  #cccccc 0%,#eeeeee 100%);
+background-image: -o-linear-gradient(top,  #cccccc 0%,#eeeeee 100%);
+background-image: -ms-linear-gradient(top,  #cccccc 0%,#eeeeee 100%);
+background-image: linear-gradient(to bottom,  #cccccc 0%,#eeeeee 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#eeeeee',GradientType=0 );
+
+}
+
+#cuttz_to_dos del{color:#ccc;}
+#cuttz_to_dos del:hover{color:#c00;}
+
+td.cuttz-input {
+min-width:230px;
+}
+
+
+h4.guide_head {padding: .618em 1em; background: #eee; border-bottom: 1px solid #888;}
+
+
+/* Cuttz landing sections */
+
+.landing-section-stuff {
+	background-color: #eee;
+	padding: 0.618em 1.2em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	border: 1px solid #ccc;
+}
+.landing-section-stuff .section-title {
+	margin-bottom: 1em;
+}
+
+.landing-section-stuff .section-title input {
+	font-size: 1.2em;
+	outline: 0 none;
+    padding: 10px;
+    width: 100%;
+	margin-top: 5px;
+}
+
+.cuttz-hidden {
+	position:absolute !important;
+	top: -9999px !important;
+	visibility:hidden !important;
+}
+
+.gl-checkbox {min-wwidth:25px;}
+
+#cuttz_debug_settings_box .gl-label {
+	min-width: auto;
+	max-width: 0;
+}
+
+.gl-rule {
+	border-top: 1px solid #eee;
+	height: 10px;
+	margin-bottom: 20px;
+}
+
+.gfonts-api-key.validating {
+	bbackground: url(three-dots.svg) right center 50% no-repeat !important;
+    background-image: url(three-dots.svg);
+    background-size: 5%;
+    background-position: 310px center;
+    background-repeat: no-repeat;
+}
+
+.gfonts-api-key.validated.valid {
+	border-color: #1abc9c;
+	background-image: none;
+}
+
+.gfonts-api-key.validated.invalid {
+	border-color: #e74c3c;
+	background-image: none;
+}
+
+.gfonts-api-key.empty {
+	border-color: #f1c40f;
+	background-image: none;
+}
+
+/* Geneis WP 4.4 metabox styles fix */
+
+.cuttz-framework .postbox .hndle {
+	float: none;
+}
+
+/* Cuttz sidebar styles */
+
+.cuttz-framework .genesis-metaboxes {
+	position: relative;
+}
+
+.cuttz-framework .cuttz-sidebar {
+	position: absolute;
+	left: 750px;
+	min-width: 255px;
+}
+
+.cuttz-framework .cuttz-sidebar .section {
+	margin-bottom: 20px;
+}
+
+.cuttz-framework .cuttz-sidebar h3 {
+	border-bottom: 1px solid #eeeeee;
+	background-color: #00aaff;
+	font-size: 14px;
+	line-height: 1.4;
+	margin: 0;
+	padding: 8px 12px;
+}
+
+.cuttz-framework .cuttz-sidebar .cuttz-postbox-wrapper {
+	mmargin: 11px 0;
+	padding: 20px;
+	background-color: #ffffff;
+	border: 1px solid #e5e5e5;
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.04);
+	border-top: 0 none;
+}
+
+.cuttz-framework .cuttz-sidebar .cuttz-testimonial-area h3 {
+	padding: 25px 12px 0;
+	text-align: center;
+}
+
+.cuttz-framework .cuttz-sidebar .cuttz-testimonial-area .cuttz-postbox-wrapper {
+	background-color: #0af;
+	border: 0 none;
+	box-shadow: none;
+	color: #fff;
+	margin-top: -1px;
+	padding-bottom: 25px;
+}
+
+.cuttz-framework .cuttz-sidebar .cuttz-testimonial-cta {
+	margin-top: 20px;
+}
+
+.cuttz-framework .cuttz-sidebar .cuttz-postbox-wrapper *:first-of-type {
+	margin-top: 0;
+}
+
+.cuttz-framework .cuttz-sidebar .cuttz-postbox-wrapper *:last-of-type {
+	margin-bottom: 0;
+}
+
+.cuttz-sidebar .dashicons {
+	color: #97bbcd;
+	color: #00aaff;
+	font-size: 20px;
+	margin-right: 6px;
+	position: relative;
+	top: 0;
+}
+
+.cuttz-sidebar .cuttz-featured-devs {
+	color: #fff;
+}
+
+.cuttz-sidebar .cuttz-featured-devs:hover {
+	text-decoration: none;
+}
+
+.cuttz-sidebar .cuttz-submit-testimonial {
+	background-color: #ffffff;
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+	display: block;
+	font-variant: small-caps;
+	font-weight: bold;
+	padding: 8px 12px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	text-transform: capitalize;
+	color: #0af;
+}
+
+.cuttz-sidebar .cuttz-submit-testimonial:hover {
+	color: #0af;
+	top: 1px;
+	transition: all 400ms ease-in 0s;	
+}
+
+.cuttz-sidebar .cuttz-sb-sm {
+	text-align: center;
+	margin-top: 1em;
+}
+
+.cuttz-sidebar .cuttz-follow-sm {
+	text-decoration: none !important;
+	color: #fff;
+	margin: 0 3px;
+}
+
+.cuttz-sidebar .cuttz-follow-sm span {
+	color: #fff;
+}
+
+.cuttz-sidebar .cuttz-admin-help {
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 1025px) {
+	
+	.cuttz-framework .cuttz-sidebar {
+		display: inline-block;
+		left: 0;
+		position: relative;
+		width: 100%;
+	}
+	
+}
+
+/* Custom Menus metabox styles */
+
+#cuttzmenu .menu-locations tr:nth-child(odd) {
+	margin-bottom: 0.618em;
+}
+
+#cuttzmenu .menu-locations td {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#cuttzmenu .menu-location-menus select {
+	float: none;
+	width: 100%;
+	margin-bottom: 0.618em;
+}
+
+#cuttzmenu .menu-locations tr:last-of-type .menu-location-menus select {
+	margin-bottom: 0;
+}
+
+#cuttzmenu #menu-locations-table {
+	border: 0 none;
+	ppadding-bottom: 0.618em;
+}
+
+/* Cuttz Activation/Deactivation notices */
+
+.error.deactivated-notice {
+	border-left-color: #ffba00;
+}
+
+.cuttz-no-caps {
+	text-transform: normal;
+}
+
+a.cuttz-ignore-notice {
+	color: #ed6d62;
+	float: right;
+	position: absolute;
+	right: -10px;
+	text-decoration: none !important;
+	top: -10px;
+}
+
+a.cuttz-ignore-notice:hover {
+	color: #e74c3c;
+}
+
+.cuttz-framework .dashicons-yes,
+.cuttz-framework .dashicons-no-alt {
+  margin-top: 6px;
+}
+
+.cuttz-framework .dashicons-yes {
+	color: #79ba49;
+}
+
+.cuttz-framework .dashicons-no-alt {
+	color: #e74c3c;
+}
+
+.cuttz-hide-notice {
+	text-decoration: none !important;
+}
+
+/* Clear the floats on Cuttz Admin pages since they break the notices display */
+
+.cuttz-framework .wrap div.error,
+.cuttz-framework .wrap div.updated,
+.genesis_page_cuttz-framework-branding .wrap div.error,
+.genesis_page_cuttz-framework-branding .wrap div.updated {
+	clear: both;
+}
+
+/* Cuttz page/ post layout style selector styles */
+
+.cuttz-lp-layout .cuttz-page-layout-style {
+	display: block;
+	float: left;
+	margin: 10px 10px 10px 0;
+	text-align: center;
+}
+
+.cuttz-lp-layout .cuttz-page-layout-style img {
+	display: block;
+	max-width: 120px;
+	border: 3px solid rgba(0, 0, 0, 0);
+	transition: all 0.3s ease-in-out 0s;
+	padding: 2px;
+	background-color: #ffffff;
+}
+
+.cuttz-lp-layout .cuttz-page-layout-style img:hover {
+	border: 3px solid #cccccc;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.cuttz-lp-layout .cuttz-page-layout-style.active img {
+	border: 3px solid #cccccc;
+}

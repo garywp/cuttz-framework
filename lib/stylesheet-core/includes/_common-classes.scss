@@ -1,0 +1,180 @@
+/*
+Common Classes
+---------------------------------------------------------------------------------------------------- */
+
+/* WordPress
+--------------------------------------------- */
+
+.avatar {
+	float: left;
+}
+
+.alignleft .avatar {
+	margin-right: 1.618em;
+}
+
+.alignright .avatar {
+	margin-left: 1.618em;
+}
+
+.search-form input[type="submit"] {
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.sticky {
+	background-color: #ffeaab;
+}
+
+img.centered, .aligncenter {
+	display: block;
+	margin: 0 auto 1.618em;
+}
+
+.alignleft {
+	float: left;
+	text-align: left;
+}
+
+.alignright {
+	float: right;
+	text-align: right;
+}
+
+img.alignleft, .wp-caption.alignleft {
+	margin: 0 1.618em 1.618em 0;
+}
+
+img.alignright, .wp-caption.alignright {
+	margin: 0 0 1.618em 1.618em;
+}
+
+p {
+	.alignleft, .alignright {
+		margin-top: 0;
+	}
+}
+
+.wp-caption {
+	margin-bottom: 1.618em;
+	.wp-caption-text {
+		font-variant: small-caps;
+		text-transform: capitalize;
+		font-weight: 700;
+		text-align: center;
+		margin-top: 0;
+	}
+}
+
+.gallery-caption {}
+
+.widget_calendar {
+	table {
+		width: 100%;
+	}
+	td, th {
+		text-align: center;
+	}
+}
+
+/* Genesis
+--------------------------------------------- */
+
+.breadcrumb {
+	margin-bottom: 1.618em;
+	font-variant: small-caps;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+}
+
+.archive .archive-description, .taxonomy .taxonomy-description {
+	padding: 1em 1.618em;
+	background-color: #ffefbf;
+	border: 1px solid #d9be6c;
+	margin-bottom: 1.618em;
+}
+
+.archive-description p, .taxonomy-description p {}
+
+.aarchive-description {
+	background-color: #fff;
+	margin-bottom: 2.618em;
+}
+
+.author-box {
+	background-color: #fff;
+	margin-bottom: 2.618em;
+	padding: 1.618em;
+	background-color: #ffeaab;
+	border: 1px solid #d9c791;
+}
+
+.author-box-title {
+	color: #333;
+	margin-top: 0;
+	line-height: 1;
+	text-transform: capitalize;
+}
+
+.author-box {
+	a {
+		border-bottom: 1px solid #ddd;
+	}
+	p {
+		margin-bottom: 0;
+	}
+	.avatar {
+		margin-left: 1.618em;
+		margin-bottom: 1.618em;
+		float: right;
+	}
+}
+
+/* Titles
+--------------------------------------------- */
+
+.entry-title {
+	font-size: 2.618em;
+	line-height: 1.2;
+	margin: 0;
+}
+
+.search .archive-title {
+	padding-bottom: 0.618em;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 1.2em;
+}
+
+.entry-title a, .sidebar .widget-title a {
+	color: #333;
+}
+
+.entry-title a:hover {
+	color: #666;
+}
+
+.widget-title {
+	text-transform: capitalize;
+	font-variant: small-caps;
+	letter-spacing: 1px;
+	margin: 0 0 1.2em 0;
+}
+
+.sidebar {
+	.widget-wrap > :not(.widget-title) {
+		margin-bottom: 2.618em;
+	}
+	.widget-title a {
+		border: none;
+	}
+}
+
+.archive-title {
+	margin-top: 0;
+	font-weight: bold;
+}

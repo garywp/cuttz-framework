@@ -1,0 +1,2513 @@
+/**
+ * Cuttz Framework Core Skin
+ * Skin Name: Cuttz Design
+ * Highlights: Flat UI design, beautiful typography, multiple landing page styles
+ */
+
+/*
+Table of contents
+— Color Variables 
+— Generic Styles
+— Pagewidth Set-up Styles
+— Breadcrumbs
+— Entry meta
+— Captions
+— Author Box
+— Comments
+— Pitch
+— Single Post Navigation
+— Pagination
+— Archive Description Box
+— Forms styles — input, select, textarea
+— Search form
+— Buttons
+— Site Header Styles
+— Menu Styles
+	— Primary Nav Styles
+	— Secondary Nav Styles
+— Content Styles
+— Sidebar Styles
+— Widgets Above Header Area Styles
+— Widgets Below Header Area Styles
+— Widgets Above Footer Area Styles
+— After Entry Widgets
+— Footer Widgets Styles
+— Site Footer Styles
+— Landing Page Styles
+	— Cuttz Style One
+	— Cuttz Style Two
+— Utility CSS Styles 
+	— Highlight styles  
+	— Testimonial Styles 
+	— Blockquote Styles 
+	— Content Boxes 
+	— Alert & note styles
+	— CTA Buttons
+		— Simple buttons
+		— Big Buttons
+		— White Buttons
+	— Custom List Styles
+	— Collapsible Content
+	— Supporting CSS for pace.js
+— WooCommerce Styles
+—  Media Queries
+
+*/ 
+
+/* Color Variables */
+
+$cuttz_blue: #00aaff;
+$cuttz_dark_blue: #2980b9;
+$cuttz_green: #1abc9c;
+$cuttz_dark_green: #07a384;
+$cuttz_pink: #d982a6;
+$cuttz_yellow: #f8bc3a;
+$cuttz_red: #d15247;
+$cuttz_dark_gray: #282a2b;
+$cuttz_light_gray: #f2f5f7;
+
+
+/* Generic Styles */
+
+::-moz-selection {
+   background: $cuttz_green;
+   color: #fff;
+}
+
+::selection {
+    background: $cuttz_green;
+	color: #fff;
+}
+
+.cuttz-design {
+	.cuttz-sb-before-header-wrap,
+	.cuttz-sb-after-header-wrap,
+	.site-inner .wrap,
+	.cuttz-sb-above-footer-wrap {
+		border-bottom: none;
+	}
+}
+
+a,
+a:hover,
+a:focus,
+a.cta-btn,
+a.white-btn,
+a.big-btn,
+input:focus,
+input,
+input:hover {
+	transition: all 0.3s ease-in 0s;
+	outline: 0;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.widget-wrap a.cta-btn,
+.widget-wrap a.big-btn,
+.widget-wrap a.white-btn {
+	text-decoration: none;
+	text-align: center;
+}
+
+.content-divider {
+	padding-bottom: 0.618em;
+	margin-bottom: 2.618em;
+	border-bottom: 1px solid #dedede;
+	clear: both;
+}
+
+address {
+	font-style: normal;
+}
+
+/* Fancy Ampersand Style */
+
+.and {
+	font-family: Palatino, Baskerville, "Goudy Old Style", "Book Antiqua", serif;
+	font-style: italic;
+}
+
+/* Pagewidth Set-up Styles */
+
+body.pagewidth {
+	
+	.site-container {
+		box-shadow: 0 0 20px rgba(0,0,0,0.25);
+	}
+}
+
+/* Breadcrumbs */
+
+.cuttz-design .breadcrumb {
+	font-size: 0.75em;
+	padding: 0.618em;
+	border: 1px dotted #bfbfbf;
+	margin-bottom: 2.618em;
+}
+
+/* Entry meta — Date */
+
+.entry-time:before {
+	content: '\f073';
+	font-family: FontAwesome;
+	display: inline-block;
+	padding-right: 5px;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 1em;
+	background-color: $cuttz_light_gray;
+
+	.wp-caption-text {
+		font-variant: normal;
+		font-weight: inherit;
+		text-transform: none;
+		margin-bottom: 0;
+	}
+}
+
+/* Author Box */
+
+.cuttz-design .author-box {
+	background-color: $cuttz_light_gray;
+	border: none;
+	border-top: 8px solid $cuttz_green;
+	margin-bottom: 2.618em;
+	padding: 1.618em;
+}
+
+.cuttz-design .author-box .avatar {
+	border-radius: 50%;
+}
+
+/* Comments */
+
+.comment .avatar {
+	border-radius: 50%;
+}
+
+/* Pitch */
+
+.pitch {
+	font-size: 1.618rem;
+	font-weight: normal;
+}
+
+/* Single Post Nagivation */
+
+.cuttz-design.single {
+	
+	.pagination-previous a,
+	.pagination-next a {
+		background-color: #eee;
+		padding: 1em 1.2em;
+		display: block;
+	}
+	
+	.pagination-previous a:hover,
+	.pagination-next a:hover {
+		color: $cuttz_green;
+	}
+	
+	.pagination-previous {
+		margin-top: 1.618em;
+		margin-bottom: 1em;
+	}
+	
+	.pagination-next {
+		text-align: right;
+	}
+}
+
+/* Pagination */
+
+.cuttz-design {
+	.pagination,
+	.woocommerce-pagination {
+		font-weight: 500;
+	}
+}
+
+/* Archive Description Box */
+
+.archive .archive-description,
+.taxonomy .taxonomy-description {
+	background-color: transparentize($cuttz_pink, 0.9);
+	border-color: transparentize($cuttz_pink, 0.8);
+	
+	.archive-title {
+		color: $cuttz_blue;
+		font-variant: small-caps;
+	}
+}
+
+/* Forms styles — input, select, textarea */
+
+input,
+select,
+textarea {
+	font-weight: inherit;
+	box-shadow: none;
+}
+
+input:focus,
+textarea:focus {
+	border-color: $cuttz_blue;
+}
+
+/* Search form */
+
+input[type="search"] {
+	background-image: url(images/search.png);
+	background-repeat: no-repeat;
+	background-position: 95% center;
+}
+
+/* Buttons */
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+.entry-content .button,
+.landing-section .button {
+	border: none;
+	background-color: $cuttz_green;
+	background-image: none;
+	text-align: center;
+	color: #fff;
+	padding: 0.618em 1.618em;
+	font-size: 1.2em;
+	font-weight: 500;
+}
+
+.button,
+.entry-content .button,
+.landing-section .button {
+	text-decoration: none;
+}
+
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+.button:hover,
+.entry-content .button:hover,
+.landing-section .button:hover {
+	background-color: $cuttz_blue;
+}
+
+.button:hover,
+.entry-content .button:hover,
+.landing-section .button:hover {
+	color: #fff;
+}
+
+/* Site Header Styles */
+
+.cuttz-design { 
+
+	.site-header {
+		background-color: $cuttz_blue;
+		
+		.wrap {
+			background-color: transparent;
+			padding-top: 2.618em;
+			padding-bottom: 2.618em;
+		}
+	}
+}	
+
+/* Menu Styles */
+
+/* Primary Nav Styles */
+	
+.cuttz-design .nav-primary {	
+	
+	.wrap {
+		background-color: transparent;
+	}
+	
+	.menu li a {
+		padding: 2em 1.618em;
+	}
+	
+	.menu > li:first-child a {
+		margin-left: -1.618em; 
+	}
+	
+	.sub-menu li a {
+		padding: 1em 1.618em;
+	} 
+
+	.menu li a:before {
+		display: inline-block;
+		font-family: 'FontAwesome';
+		padding-right: 7px;
+		font-weight: normal;
+	}
+
+	.menu li.home > a:before {
+		content:'\f015';
+	}
+
+	.menu li.about > a:before {
+		content:'\f0f4';
+	}
+
+	.menu li.blog > a:before {
+		content:'\f044';
+	}
+
+	.menu li.cart > a:before {
+		content:'\f07a';
+	}
+
+	.menu li.contact > a:before {
+		content:'\f007';
+	}
+	
+	.menu li.account > a:before {
+		content:'\f090';
+	}
+	
+}	
+	
+/* Secondary Nav Styles */
+	
+.cuttz-design .nav-secondary {
+	
+	.wrap {
+		background-color: transparent;
+		padding-top: 0;
+	}
+	
+	.menu-secondary {
+		float: right;
+		display: table;
+		width: auto;
+	}
+	
+	.menu > li:last-child a {
+		margin-right: -1em; 
+	}
+	
+	.menu-secondary li {
+		margin-bottom: 0;
+	}
+	
+	.menu-secondary .sub-menu {
+		box-shadow: none;
+		border-left: none;
+	}
+}
+
+/* Mobile Menu Styles */
+
+.captivate {
+	
+	.menu-toggle {
+		background-color: $color_light_gray;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		color: inherit;
+		border-bottom: 2px solid $color_blue;
+	}
+	
+	.sub-menu-toggle {
+		background-color: $color_blue;
+		color: #fff;
+		right: 0;
+	}
+
+}
+
+/* Content Styles */
+
+.cuttz-design {
+	
+	.site-inner .wrap {
+		padding-top: 3.618em;
+	}
+	
+	.entry-categories,
+	.entry-tags,
+	.entry-categories a,
+	.entry-tags a {
+		font-weight: inherit;
+	}
+	
+	.entry-categories::before,
+	.entry-tags::before {
+		color: $cuttz_blue;
+	}
+	
+	.entry-footer .entry-meta {
+		padding: 1em 0;
+		border-top: 1px dotted #bfbfbf;
+		border-bottom: 1px dotted #bfbfbf;
+	}
+	
+	.entry {
+		border-bottom: none;
+		margin-bottom: 0;
+	}
+	
+}
+
+.error404 .entry-title {	
+	margin: 0 0 0.618em;
+}
+
+	
+/* Sidebar Styles */
+
+.cuttz-design .sidebar {
+	
+	.widget {
+		padding: 1.618em;
+		background-color: $cuttz_light_gray;
+		border-top: 10px solid transparent;
+	}
+	
+	.widget:nth-child(odd) {
+		border-color: $cuttz_yellow;
+		
+		input[type="button"],
+		input[type="reset"],
+		input[type="submit"],
+		.button {
+			background-color: $cuttz_yellow;
+		}
+	}
+	
+	.widget:nth-child(even) {
+		border-color: $cuttz_green;
+	}
+	
+	.widget-title {
+		font-variant: normal;
+		letter-spacing: normal;
+	}
+	
+	.widget-wrap > *:not(.widget-title) { // Adjustment 
+		margin-bottom: 1em;
+	}
+	
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"],
+	.button {
+		width: 100%;
+	}
+}
+
+/* Widgets Above Header Area Styles */
+
+.cuttz-sb-before-header {
+	background-color: $cuttz_yellow;
+	
+	.wrap {
+		background-color: transparent;
+	}
+	
+	.widgettitle,
+	.widget-wrap, 	
+	.widget-wrap a {
+		color: #fff;
+	}
+}
+
+
+/* Widgets Below Header Area Styles */
+
+.cuttz-sb-after-header {
+	
+	.widget {
+		background-color: transparentize($cuttz_yellow, 0.9);
+		border: 3px double transparentize($cuttz_yellow, 0.8);  
+		padding: 1.618em;
+	}
+}
+
+/* Widgets Above Footer Area Styles */
+
+.cuttz-sb-above-footer {
+	background-color: $cuttz_blue;
+	text-align: center;
+	border-top: 10px solid #eee;
+	
+	.wrap {
+		background-color: transparent;
+		padding-top: 2.618em;
+	}
+	
+	.widgettitle, 
+	.widget-wrap, 
+	.widget-wrap a {
+		color: #fff;
+	}
+	
+	.white-btn,
+	.cta-btn {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+/* After Entry Widgets */
+
+.after-entry {
+	
+	.widget {
+		padding: 1.618em;
+		background-color: $cuttz_light_gray;
+		border-top: 8px solid $cuttz_pink;
+	}
+}
+
+/* Footer Widgets Styles */
+
+.cuttz-design .footer-widgets {
+	
+	background-color: lighten($cuttz_dark_gray, 1%);
+	border-top: 3px solid $cuttz_blue;
+	border-bottom: 1px solid #404040;
+	
+	.wrap {
+		padding-top: 2.618em;
+		padding-bottom: 0;
+		background-color: transparent;
+	}
+	
+	 a {
+		color: #aaa; 
+		text-decoration: none !important;
+		border-bottom: 1px dotted #aaa;
+	}
+}
+
+/* Site Footer Styles */
+
+.cuttz-design .site-footer {
+	background-color: $cuttz_dark_gray;
+	
+	.wrap {
+		background-color: transparent;
+	}
+	
+	.creds {
+		margin-top: 0.618em;
+	}
+	
+	.creds a {
+		border-bottom: none;
+		font-weight: 500;
+	}
+
+	.creds a:hover {
+		color: $cuttz_blue;
+	}
+	
+	.cuttz-nav-footer li a {
+		font-weight: 500;
+	}
+}
+
+/* Landing Page Styles */
+
+/* Cuttz Style One */
+
+.cuttz-style-one {
+	.post-edit-link {
+		display: none;
+	}
+	
+	.wrap {
+		padding-bottom: 2.618em;
+	}
+
+	.landing-section-title {
+		font-size: 2.45em;
+		text-transform: capitalize;
+		font-weight: inherit;
+		line-height: 1.618em;
+	}
+	
+	.cta-btn {
+		border: 2px solid #fff;
+		text-decoration: none;
+		transition: all .5s ease-out;
+		padding: 1em 1.618em;
+		display: table;
+		outline: none;
+		
+		.fa {
+				padding-right: 8px;
+			}
+	}
+	
+	.after-header-first {
+		background-color: $cuttz_blue;
+		
+		.wrap {
+			background-color: transparent;
+			color: #fff;
+			text-align: center;
+		}
+		
+		.landing-section-title {
+			color: #fff;
+			font-size: 3.15em;
+		}
+		
+		.landing-section-content {
+			font-size: 2em;
+		}
+		
+		.new-line {
+			display: block;
+		}
+		
+		.cta-btn {
+			color: #fff;
+			padding: 0.381em 1em;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		.cta-btn:hover {
+			background-color: $cuttz_yellow;
+		}
+		
+	}
+	
+	.after-header-second {
+		background-color: $cuttz_light_gray;
+		
+		.wrap {
+			background-color: transparent;
+		}
+		
+		.cta-btn {
+			color: $cuttz_green;
+			border-color: $cuttz_green;
+			margin-top: 2em;
+			font-weight: normal;
+		}
+		
+		.cta-btn:hover {
+			color: $cuttz_pink;
+			border-color: $cuttz_pink;
+		}
+		
+	}
+	
+	.after-header-third {
+	
+		background-color: #fff;
+		
+		.wrap {
+			background-color: transparent;
+		}
+		
+		.cta-btn {
+			color: $cuttz_pink;
+			border-color: $cuttz_pink; 
+			font-weight: normal;
+			margin-top: 2em;
+		}
+		
+		.cta-btn:hover {
+			color: $cuttz_green;
+			border-color: $cuttz_green;
+		}
+		
+	}
+	
+	.site-inner {
+		background-color: $cuttz_pink;
+		color: #fff;
+		font-size: 3.25em;
+		text-align: center;
+		
+		.wrap {
+			background-color: transparent;
+			padding-top: 1em;
+			padding-bottom: 0;
+		}
+		
+		.entry {
+			padding-bottom: 0;
+		}
+		
+		.entry-content {
+			margin-bottom: 0;
+		}
+		
+		.entry-content p {
+			margin-bottom: 1em;
+		}
+	}
+	
+	.before-footer-first {
+		background-color: #fff;
+		
+		.wrap {
+			background-color: transparent;
+		}
+	
+		.cta-btn {
+			color: $cuttz_green;
+			border-color: $cuttz_green; 
+			font-weight: normal;
+			margin-top: 2em;
+		}
+		
+		.cta-btn:hover {
+			color: $cuttz_pink;
+			border-color: $cuttz_pink;
+		}
+	}
+	
+	.before-footer-second {
+		background-color: $cuttz_light_gray;
+		
+		.wrap {
+			background-color: transparent;
+		}
+	
+		.landing-section-title {
+			text-align: center;
+		}
+	}
+	
+	.before-footer-third {
+		background-color: $cuttz_blue;
+		color: #fff;
+		text-align: center;
+		
+		.wrap {
+			background-color: transparent;
+		}
+		
+		.landing-section-title {
+			color: #fff;
+			font-size: 2.75em;
+		}
+		
+		.landing-section-content {
+			font-size: 2em;
+		}
+		
+		.cta-btn {
+			color: #fff;
+			font-size: 1.618rem;
+			padding: 0.381em 1em;
+			margin-left: auto;
+			margin-right: auto;
+			
+			.fa {
+				padding-right: 0.5em;
+			}
+		}
+		
+		.cta-btn:hover {
+			background-color: $cuttz_yellow;
+		} 
+	} 
+	
+	/* Landing page images */
+	
+	img.slide-right {
+		margin-right: -50px;
+	}
+	
+	img.slide-left {
+		margin-left: -40px;
+	}
+}
+
+/* Cuttz Style Two */
+
+.cuttz-style-two {
+	
+	&.pagewidth {
+		background-color: #3d4042;
+	}
+	
+	.post-edit-link {
+		display: none;
+	}
+
+	.wrap {
+		padding-bottom: 2.618em;
+	}
+
+	.landing-section-title {
+		font-size: 2.45em;
+		text-transform: capitalize;
+		font-weight: inherit;
+		line-height: 1.618em;
+	}
+	
+	.cta-btn {
+		border: 2px solid #fff;
+		text-decoration: none;
+		transition: all .5s ease-out;
+		padding: 1em 1.618em;
+		display: table;
+		outline: none;
+		
+		.fa {
+				padding-right: 8px;
+			}
+	}
+	
+	.after-header-first {
+		background-color: $cuttz_blue;
+		
+		.wrap {
+			background-color: transparent;
+			color: #fff;
+			text-align: center;
+		}
+		
+		.landing-section-title {
+			color: #fff;
+			font-size: 3.15em;
+		}
+		
+		.landing-section-content {
+			font-size: 2em;
+		}
+		
+		.new-line {
+			display: block;
+		}
+		
+		.cta-btn {
+			color: #fff;
+			padding: 0.381em 1em;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		.cta-btn:hover {
+			background-color: $cuttz_yellow;
+		}
+		
+	}
+	
+	.after-header-second {
+		background-color: $cuttz_light_gray;
+		
+		.wrap {
+			background-color: transparent;
+		}
+		
+		.cta-btn {
+			color: $cuttz_green;
+			border-color: $cuttz_green;
+			margin-top: 2em;
+			font-weight: normal;
+		}
+		
+		.cta-btn:hover {
+			color: $cuttz_pink;
+			border-color: $cuttz_pink;
+		}
+		
+	}
+	
+	.after-header-third {
+		background-color: #fff;
+		
+		.wrap {
+			background-color: transparent;
+		}
+		
+		.cta-btn {
+			color: $cuttz_pink;
+			border-color: $cuttz_pink; 
+			font-weight: normal;
+			margin-top: 2em;
+		}
+		
+		.cta-btn:hover {
+			color: $cuttz_green;
+			border-color: $cuttz_green;
+		}
+		
+	}
+	
+	.site-inner {
+		background-color: $cuttz_pink;
+		color: #fff;
+		font-size: 3.25em;
+		text-align: center;
+		
+		.wrap {
+			background-color: transparent;
+			padding-top: 1em;
+			padding-bottom: 0;
+		}
+		
+		.entry {
+			padding-bottom: 0;
+		}
+		
+		.entry-content {
+			margin-bottom: 0;
+		}
+		
+		.entry-content p {
+			margin-bottom: 1em;
+		}
+	}
+	
+	.before-footer-first {
+		background-color: #fff;
+		
+		.wrap {
+			background-color: transparent;
+		}
+	
+		.cta-btn {
+			color: $cuttz_green;
+			border-color: $cuttz_green; 
+			font-weight: normal;
+			margin-top: 2em;
+		}
+		
+		.cta-btn:hover {
+			color: $cuttz_pink;
+			border-color: $cuttz_pink;
+		}
+	}
+	
+	.before-footer-second {
+		background-color: $cuttz_light_gray;
+		
+		.wrap {
+			background-color: transparent;
+		}
+	
+		.landing-section-title {
+			text-align: center;
+		}
+	}
+	
+	.before-footer-third {
+		background-color: $cuttz_blue;
+		color: #fff;
+		text-align: center;
+		
+		.wrap {
+			background-color: transparent;
+		}
+		
+		.landing-section-title {
+			color: #fff;
+			font-size: 2.75em;
+		}
+		
+		.landing-section-content {
+			font-size: 2em;
+		}
+		
+		.cta-btn {
+			color: #fff;
+			font-size: 1.618rem;
+			padding: 0.381em 1em;
+			margin-left: auto;
+			margin-right: auto;
+			
+			.fa {
+				padding-right: 0.5em;
+			}
+		}
+		
+		.cta-btn:hover {
+			background-color: $cuttz_yellow;
+		} 
+		
+	}
+	
+	/* Landing page images */
+	
+	img.slide-right {
+		margin-right: -20px;
+	}
+	
+	img.slide-left {
+		margin-left: -20px;
+	}
+	
+}	
+
+/* Utility CSS Styles */
+
+/* Highlight styles */
+
+.highlight-light {
+	padding: 1.618em 2.618em;
+	background-color: #f1f0f1;
+	border: 1px solid #dedede;
+	margin-bottom: 2.618em;
+}
+
+.highlight-dark {
+	padding: 1.618em 2.618em;
+	background-color: #555;
+	border: 1px solid #404040;
+	margin-bottom: 2.618em;
+	
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: #fff;
+	}
+}
+
+/* Testimonial Styles */
+
+.testimonial-area {
+	
+	margin: 0 1.618em 5em;
+	
+	img {
+		border-radius: 50%;
+	}
+	
+	blockquote:before {
+		content: none;
+	}
+	
+	blockquote {
+		margin: 0;
+		color: #fff;
+		font-weight: normal;
+		border: none;
+		padding-left: 0;
+	}
+	
+	.testimonial {
+		padding: 1.618em;
+		color: #fff;
+	}
+	
+	.testimonial-left {
+		border-right: 8px solid rgba(0,0,0,0.15);
+		position: relative;
+	}
+	
+	.testimonial-right {
+		border-left: 8px solid rgba(0,0,0,0.15);
+		position: relative;
+	}
+	
+	.testimonial-blue {
+		background-color: $cuttz_blue;
+	}
+	
+	.testimonial-green {
+		background-color: $cuttz_green;
+	}
+	
+	.testimonial-yellow {
+		background-color: $cuttz_yellow;
+	}
+	
+	.testimonial-pink {
+		background-color: $cuttz_pink;
+	}
+	
+	.testimonial-red {
+		background-color: $cuttz_red;
+	}
+	
+	figcaption {
+		font-variant: small-caps;
+		font-weight: normal;
+	}
+	
+	figcaption:before {
+		content: '—';
+		display: inline-block;
+		padding-right: 5px;
+	}
+}	
+
+/* Blockquote Styles */
+
+blockquote:before {
+	content: none;
+}
+	
+blockquote {
+	border-left: 5px solid #808080;
+	color: $808080;
+	padding-left: 1.618em;
+}
+	
+blockquote.green {
+	color: $cuttz_green;
+	border-color: $cuttz_green;
+}
+
+blockquote.blue {
+	color: $cuttz_blue;
+	border-color: $cuttz_blue;
+}	
+	
+blockquote.yellow {
+	color: $cuttz_yellow;
+	border-color: $cuttz_yellow;
+}	
+
+blockquote.red {
+	color: $cuttz_red;
+	border-color: $cuttz_red;
+}	
+
+blockquote.pink {
+	color: $cuttz_pink;
+	border-color: $cuttz_pink;
+}	
+
+/* Content Boxes */
+
+@mixin light_bg($color) {
+	background-color: transparentize($color, 0.9);
+	border: 1px solid transparentize($color, 0.8);
+}
+
+.content-box {
+	padding: 1.618em;
+	margin-bottom: 1.618em;
+	
+	&.dark {
+		color: #fff;
+		font-weight: normal;
+		
+		h1, h2, h3, h4, h5, h6 {
+			color: #fff;
+		}
+	}
+	
+	&.blue.light {
+		@include light_bg($cuttz_blue);
+	}
+	
+	&.blue.dark {
+		background-color: $cuttz_blue;
+	}
+	
+	&.green.light {
+		@include light_bg($cuttz_green);
+	}
+	
+	&.green.dark {
+		background-color: $cuttz_green;
+	}
+	
+	&.yellow.light {
+		@include light_bg($cuttz_yellow);
+	}
+	
+	&.yellow.dark {
+		background-color: $cuttz_yellow;
+	}
+	
+	&.red.light {
+		@include light_bg($cuttz_red);
+	}
+	
+	&.red.dark {
+		background-color: $cuttz_red;
+	}
+	
+	&.pink.light {
+		@include light_bg($cuttz_pink);
+	}
+	
+	&.pink.dark {
+		background-color: $cuttz_pink;
+	}
+}
+
+/* Alert & note styles */
+
+.entry-content p.alert,
+.landing-section p.alert,
+.entry-content p.note,
+.landing-section p.note {
+	border-left-width: 5px;
+	padding: 1.618em;
+}
+
+/* CTA Buttons */
+
+/* Simple buttons */
+
+@mixin cta_fill_bg($color) {
+	background-color: $color;
+	color: #fff;
+}
+
+@mixin cta_fill_bg_hover($color) {
+	background-color: darken($color, 5%);
+}
+
+@mixin cta_trans($color) {
+	color: $color;
+	border-color: $color;
+}
+
+@mixin cta_trans_hover($color) {
+	color: darken($color, 10%);
+	border-color: darken($color, 10%);
+}
+
+
+.cta-btn {
+	
+	&.fill {
+	
+		&.cuttz-blue {
+			@include cta_fill_bg($cuttz_blue);
+		}
+		
+		&.cuttz-blue:hover {
+			@include cta_fill_bg_hover($cuttz_blue);
+		}
+		
+		&.cuttz-green {
+			@include cta_fill_bg($cuttz_green);
+		}
+		
+		&.cuttz-green:hover {
+			@include cta_fill_bg_hover($cuttz_green);
+		}
+		
+		&.cuttz-pink {
+			@include cta_fill_bg($cuttz_pink);
+		}
+		
+		&.cuttz-pink:hover {
+			@include cta_fill_bg_hover($cuttz_pink);
+		}
+		
+		&.cuttz-yellow {
+			@include cta_fill_bg($cuttz_yellow);
+		}
+		
+		&.cuttz-yellow:hover {
+			@include cta_fill_bg_hover($cuttz_yellow);
+		}
+		
+		&.cuttz-red {
+			@include cta_fill_bg($cuttz_red);
+		}
+		
+		&.cuttz-red:hover {
+			@include cta_fill_bg_hover($cuttz_red);
+		}
+	}
+	
+	&.transparent {
+		
+		&.cuttz-blue {
+			@include cta_trans($cuttz_blue);
+		}
+		
+		&.cuttz-blue:hover {
+			@include cta_trans_hover($cuttz_blue);
+		}
+		
+		&.cuttz-green {
+			@include cta_trans($cuttz_green);
+		}
+		
+		&.cuttz-green:hover {
+			@include cta_trans_hover($cuttz_green);
+		}
+		
+		&.cuttz-pink {
+			@include cta_trans($cuttz_pink);
+		}
+		
+		&.cuttz-pink:hover {
+			@include cta_trans_hover($cuttz_pink);
+		}
+		
+		&.cuttz-yellow {
+			@include cta_trans($cuttz_yellow);
+		}
+		
+		&.cuttz-yellow:hover {
+			@include cta_trans_hover($cuttz_yellow);
+		}
+		
+		&.cuttz-red {
+			@include cta_trans($cuttz_red);
+		}
+		
+		&.cuttz-red:hover {
+			@include cta_trans_hover($cuttz_red);
+		}
+	}
+}
+
+/* Big Buttons */
+
+@mixin bigger_btn_bg($color) {
+	background-color: $color;
+	color: #fff;
+	border-color: darken($color, 10%);
+}
+
+@mixin bigger_btn_bg_hover($color) {
+	background-color: #fff;
+	color: $color;
+	border-color: $color;
+}
+
+@mixin bigger_btn_trans($color) {
+	background-color: #fff;
+	color: $color;
+	border-color: $color;
+}
+
+@mixin bigger_btn_trans_hover($color) {
+	background-color: $color;
+	color: #fff;
+	border-color: darken($color, 10%);
+}
+
+.big-btn {
+	
+	&.fill {
+	
+		&.cuttz-blue {
+			@include bigger_btn_bg($cuttz_blue);
+		}
+		
+		&.cuttz-blue:hover {
+			@include bigger_btn_bg_hover($cuttz_blue);
+		}
+		
+		&.cuttz-green {
+			@include bigger_btn_bg($cuttz_green);
+		}
+		
+		&.cuttz-green:hover {
+			@include bigger_btn_bg_hover($cuttz_green);
+		}
+		
+		&.cuttz-pink {
+			@include bigger_btn_bg($cuttz_pink);
+		}
+		
+		&.cuttz-pink:hover {
+			@include bigger_btn_bg_hover($cuttz_pink);
+		}
+		
+		&.cuttz-yellow {
+			@include bigger_btn_bg($cuttz_yellow);
+		}
+		
+		&.cuttz-yellow:hover {
+			@include bigger_btn_bg_hover($cuttz_yellow);
+		}
+		
+		&.cuttz-red {
+			@include bigger_btn_bg($cuttz_red);
+		}
+		
+		&.cuttz-red:hover {
+			@include bigger_btn_bg_hover($cuttz_red);
+		}
+	}
+	
+	&.transparent {
+		
+		&.cuttz-blue {
+			@include bigger_btn_trans($cuttz_blue);
+		}
+		
+		&.cuttz-blue:hover {
+			@include bigger_btn_trans_hover($cuttz_blue);
+		}
+		
+		&.cuttz-green {
+			@include bigger_btn_trans($cuttz_green);
+		}
+		
+		&.cuttz-green:hover {
+			@include bigger_btn_trans_hover($cuttz_green);
+		}
+		
+		&.cuttz-pink {
+			@include bigger_btn_trans($cuttz_pink);
+		}
+		
+		&.cuttz-pink:hover {
+			@include bigger_btn_trans_hover($cuttz_pink);
+		}
+		
+		&.cuttz-yellow {
+			@include bigger_btn_trans($cuttz_yellow);
+		}
+		
+		&.cuttz-yellow:hover {
+			@include bigger_btn_trans_hover($cuttz_yellow);
+		}
+		
+		&.cuttz-red {
+			@include bigger_btn_trans($cuttz_red);
+		}
+		
+		&.cuttz-red:hover {
+			@include bigger_btn_trans_hover($cuttz_red);
+		}
+	}
+}
+
+/* White Buttons */
+
+@mixin white_fill_bg_hover($color) {
+	background-color: $color;
+	color: #fff;
+}
+
+@mixin white_trans_bg_hover($color) {
+	border-color: $color;
+	color: $color;
+}
+
+.white-btn {
+	
+	&.fill {
+	
+		&.cuttz-blue:hover {
+			@include white_fill_bg_hover($cuttz_blue);
+		}
+		
+		&.cuttz-green:hover {
+			@include white_fill_bg_hover($cuttz_green);
+		}
+		
+		&.cuttz-pink:hover {
+			@include white_fill_bg_hover($cuttz_pink);
+		}
+		
+		&.cuttz-yellow:hover {
+			@include white_fill_bg_hover($cuttz_yellow);
+		}
+		
+		&.cuttz-red:hover {
+			@include white_fill_bg_hover($cuttz_red);
+		}
+	}
+	
+	&.transparent {
+		
+		&.cuttz-blue:hover {
+			@include white_trans_bg_hover($cuttz_blue);
+		}
+		
+		&.cuttz-green:hover {
+			@include white_trans_bg_hover($cuttz_green);
+		}
+		
+		&.cuttz-pink:hover {
+			@include white_trans_bg_hover($cuttz_pink);
+		}
+		
+		&.cuttz-yellow:hover {
+			@include white_trans_bg_hover($cuttz_yellow);
+		}
+		
+		&.cuttz-red:hover {
+			@include white_trans_bg_hover($cuttz_red);
+		}
+	}
+}
+
+/* Custom List Styles */
+
+.cuttz-list {
+	
+	&.cuttz-blue ul li:before {
+		color: $cuttz_blue;
+	}
+	
+	&.cuttz-pink ul li:before {
+		color: $cuttz_pink;
+	}
+	
+	&.cuttz-green ul li:before {
+		color: $cuttz_green;
+	}
+	
+	&.cuttz-yellow ul li:before {
+		color: $cuttz_yellow;
+	}
+	
+	&.cuttz-red ul li:before {
+		color: $cuttz_red;
+	}
+	
+}
+
+/* Collapsible Content */
+
+.collapsible-heading a:hover {
+	background-color: transparentize($cuttz_blue, 0.9);
+	border-color: transparentize($cuttz_blue, 0.9);
+}
+
+.collapsible-heading.opened a {
+	background: $cuttz_blue;
+}
+
+
+/* Supporting CSS for pace.js used for page load effect */	
+	
+.pace {
+	-webkit-pointer-events: none;
+	pointer-events: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 2000;
+	-webkit-transform: translate3d(0, -50px, 0);
+	-ms-transform: translate3d(0, -50px, 0);
+	transform: translate3d(0, -50px, 0);
+	-webkit-transition: -webkit-transform .5s ease-out;
+	-ms-transition: -webkit-transform .5s ease-out;
+	transition: transform .5s ease-out;
+}
+
+.pace.pace-active {
+	-webkit-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.pace .pace-progress {
+	display: block;
+	position: fixed;
+	z-index: 2000;
+	top: 0;
+	right: 100%;
+	width: 100%;
+	height: 3px;
+	background: #fff;
+	pointer-events: none;
+}
+
+
+/* WooCommerce Styles */
+
+.cuttz-design.woocommerce,
+.cuttz-design.woocommerce-page {
+	
+	#respond input#submit,
+	a.button,
+	button.button,
+	input.button {
+		border: none;
+		background-color: $cuttz_blue;
+		background-image: none;
+		text-align: center;
+		color: #fff;
+		padding: 0.618em 1em;
+		font-size: 1em;
+		font-weight: 500;
+		text-decoration: none;
+		border-radius: 0;		
+		
+		&:hover {
+			background-color: $cuttz_green;
+			color: #fff;
+		}
+	}
+	
+	p.lost_password {
+	
+		a {
+			text-decoration: none;
+		}
+		
+	}
+	
+	/* Shop page */
+	
+	span.onsale,
+	ul.products li.product .onsale {
+		background: rgba(0, 0, 0, 0) url("images/sale-flash.png") no-repeat scroll center center / 80px 80px;
+	}
+	
+	&.post-type-archive-product,
+	&.archive {
+		
+		ul.products li.product {
+			
+			margin: 0 2.5641% 2.618em 0;
+			width: 31.6239%;
+			
+			&.last {
+				margin-right: 0;
+			}
+			
+		}
+		
+	}
+	
+	ul.products li.product {		
+		
+		&.product-category {
+		
+			h3 {
+				text-align: center;
+			}
+			
+			mark {
+				background: none;
+				color: $cuttz_blue;
+			}
+			
+		}
+		
+		&:last-of-type {
+			border-bottom: 0 none;
+			padding-bottom: 0;
+		}
+		
+		a img {
+			border: 1px solid #dddddd;
+			box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+			padding: 5px;
+		}
+		
+		h3 {
+			font-weight: normal;
+			font-size: 1.17em;
+		}
+		
+		.price {
+			
+			font-size: 1em;
+			color: #757575;
+			
+			del {
+				font-size: 0.8em;
+				opacity: 0.8;
+			}
+			
+			ins {
+				font-weight: normal;
+			}
+			
+		}
+		
+		.no-stock-notice {
+			border-left: 1px solid #ddd;
+			border-right: 1px solid #ddd;
+		}
+		
+	}
+	
+	a.added_to_cart {
+		background-color: $cuttz_green;
+		border-radius: 4px;
+		color: #ffffff;
+		font-size: 0.8em;
+		margin-top: 0.618em;
+		padding: 0.309em 0.618em;
+	}
+	
+	a.remove {
+	
+		color: $color_red !important;
+		text-decoration: none;
+
+		&:hover {
+			color: #ffffff !important;
+			background: $cuttz_red !important;
+		}
+		
+	}
+	
+	/* Cart Page */
+	
+	table.cart {
+		
+		th {
+			font-size: 1.15em;
+		}
+		
+		td.actions {
+			
+			.coupon .input-text {
+				border: 1px solid #dddddd;
+				box-sizing: inherit;
+			}
+			
+		}
+			
+	}
+	
+	table.shop_table th {
+		font-size: 1.15em;
+	}
+	
+	.cart-collaterals {
+		
+		.cross-sells h2 {
+			text-transform: capitalize;
+		}
+		
+		.cart_totals {
+			th {
+				font-size: 1.15em;
+			}
+		}
+		
+	}
+	
+	/* Checkout Page */
+	
+	.woocommerce form .form-row .required {
+		color: $cuttz_green;
+		font-weight: normal;
+		position: relative;
+		top: -4px;
+	}
+	
+	#ship-to-different-address label {
+		margin-right: 8px;
+	}
+	
+	&.woocommerce-checkout,
+	&.woocommerce-account {
+		
+		input[type="text"],
+		input[type="email"] {
+			padding: 0.618em;
+		}
+		
+		#customer_details {
+			margin-bottom: 1.618em;
+		}
+		
+		h3#order_review_heading:before {
+			display: inline-block;
+			font-family: 'FontAwesome';
+			padding-right: 10px;
+			content: '\f07a';
+		}
+		
+		.woocommerce-checkout-review-order {
+			border: 0 none;
+			box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+			margin: 1.309em 2px;
+			padding: 20px 30px;
+		}
+		
+		.woocommerce-checkout-review-order-table,
+		#payment {
+			float: left;
+			width: 48.717948717948715%;
+			margin-left: 2.564102564102564%;
+		}
+		
+		table.shop_table {
+			
+			margin-left: 0;
+			border: 0 none;
+			padding: 0 20px 0 0;
+			border-radius: 0;
+			border-right: 1px solid $cuttz_blue;
+			margin-bottom: 0;
+			
+			td {
+				padding: 6px 15px 6px 0;
+				border-top: 0 none;
+			}
+			
+			th {
+				padding: 9px 15px 9px 0;
+			}
+			
+			thead th {
+				border-bottom: 2px solid #ddd;
+				text-transform: uppercase;
+				font-weight: bold;
+			}
+			
+			tbody th,
+			tbody td {
+				font-weight: normal;
+			}
+			
+			tfoot th,
+			tfoot td {
+				border-top: 0 none;
+				font-weight: normal;
+			}
+			
+			.order-total th,
+			.order-total td {
+				border-top: 2px solid #dddddd;
+				text-transform: uppercase;
+			}
+			
+			.cart-subtotal th,
+			.cart-subtotal td,
+			.shipping th,
+			.shipping td {
+				border-top: 1px solid #dddddd;
+			}
+			
+			.product-quantity {
+				font-weight: normal;
+				color: $cuttz_dark_blue;
+			}
+		
+		}
+		
+		#payment {
+			
+			background: none;
+			border-radius: 0;
+			
+			.payment_methods {
+				border-bottom: 0 none;
+			}
+			
+			div.payment_box {
+				
+				width: auto;
+				background-color: #f8f8f8;
+				padding: 0.85em 1em;
+				
+				&:before {
+					border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #f8f8f8;
+					top: -2px;
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	/* Order Received page */
+	
+	&.woocommerce-order-received,
+	&.woocommerce-account {
+	
+		table.shop_table {
+			
+			border: 1px solid #dddddd;
+			background-color: #f2f2f2;
+			padding: 10px 20px;
+			border-radius: 3px;
+			
+			th {
+				padding: 4px 8px 4px 0;
+				font-size: 1em;
+			}
+			
+			td {
+				padding: 4px 8px 4px 0;
+			}
+			
+			tfoot tr:first-of-type {
+				th, td {
+					border-top: 1px solid #ddd;
+				}
+			}
+			
+			tfoot tr:last-of-type {
+				th, td {
+					border-top: 2px solid #ddd;
+				}
+			}
+			
+			&.customer_details {
+				
+				td {
+					border-top: 1px solid #ddd;
+				}
+				
+				tr:first-of-type td {
+					border-top: 0 none;
+				}
+				
+			}
+			
+		}
+		
+		table.shop_table.order_details {
+		
+			.product-name small a {
+				background: $cuttz_blue;
+				color: #fff;
+				padding: 0.1em 0.85em;
+				border: 0 none;
+			}
+		
+		}
+	
+	}
+	
+	/* My Account page */
+	
+	&.woocommerce-account {
+		
+		table.shop_table.my_account_orders {
+			
+			padding: 8px 15px;
+			background-color: #fff;
+			
+			th {
+				text-transform: capitalize;
+			}
+		
+		}
+		
+		.addresses .title .edit {
+			background-color: $cuttz_green;
+			border-radius: 2px;
+			color: #ffffff;
+			float: none;
+			font-size: 0.85em;
+			margin-left: 1em;
+			padding: 0.15em 0.5em;
+			position: relative;
+			text-decoration: none;
+			top: 1.2em;
+		}
+		
+		.form-row {
+			padding: 0;
+		}
+		
+		.order-again,
+		form .button {
+			margin-top: 1.618em;
+		}
+		
+		.digital-downloads {
+			
+			li:before {
+				color: $cuttz_green;
+			}
+			
+			a {
+				background-color: $cuttz_light_gray;
+				border: 1px solid $cuttz_green;
+				border-radius: 2px;
+				color: $cuttz_green;
+				display: inline-block;
+				padding: 0.5em 0.75em;
+				text-decoration: none;
+			}
+			
+		}
+	
+	}
+	
+	/* View Order page */
+	
+	&.woocommerce-view-order {
+	
+		mark {
+			
+			background: none;
+			color: inherit;
+			
+			
+			&.order-status {
+				font-weight: bold;
+				color: $cuttz_green;
+			}
+			
+		}
+		
+		table.shop_table th {
+			font-size: 1em;
+		}
+	
+	}
+	
+	/* Edit Account page */
+	
+	&.woocommerce-edit-account fieldset {
+		
+		border: 0 none;
+		margin: 1.618em 0 1em;
+		padding: 0;
+		
+		> legend {
+			padding: 0;
+		}
+		
+		legend {
+			font-size: 1.25em;
+			font-weight: bold;
+			margin-bottom: 0.618em;
+		}
+		
+	}
+	
+	/* Single Product */
+	
+	div.product {
+		
+		.price {
+	
+			color: inherit;
+			
+			del {
+				display: inline-block;
+				opacity: 0.8;
+				font-size: 0.85em;
+			}
+			
+			ins {
+				font-weight: normal;
+				text-decoration: none;
+			}
+			
+		}
+		
+		.posted_in > a {
+			background-color: $cuttz_green;
+			border-radius: 2px;
+			color: #ffffff;
+			font-size: 0.85em;
+			padding: 3px 6px;
+		}
+		
+		form.cart div.quantity {
+			margin-right: 15px;
+		}
+		
+		.quantity .qty {
+			padding: 0.5em 0.309em 0.5em 0.618em;
+		}
+		
+		.woocommerce-tabs ul.tabs {
+			
+			padding: 0;
+			
+			&:before {
+				border-bottom: 3px solid $cuttz_dark_green;
+			}
+			
+			li {
+			
+				background-color: #eee;
+				border-radius: 2px;
+				border: 0 none;
+				margin: 0;
+				
+				&:before,
+				&:after {
+					border-radius: 0;
+					border: 0 none;
+					box-shadow: none;
+				}
+				
+				&.active {
+					background-color: $cuttz_dark_green;
+					color: #fff;
+				}
+				
+				a {
+					font-weight: normal;
+					padding: 0.618em 0.85em;
+					outline: 0 none;
+				}
+				
+			}
+			
+		}
+		
+		.out-of-stock {
+			background-color: $cuttz_red;
+			color: #ffffff;
+			padding: 0.618em 1em;
+			text-align: center;
+		}
+		
+	}
+	
+	p.stars a {
+		color: $cuttz_yellow;
+	}
+	
+	.related.products,
+	.upsells.products {
+		border-top: 2px solid #eeeeee;
+		margin-top: 2.618em;
+		padding-top: 0.618em;
+	}
+	
+	&.single {
+		
+		.price,
+		.product_meta,
+		.woocommerce-product-rating {
+			margin-bottom: 0.618em;
+		}
+		
+		.product_meta {
+		
+			margin-bottom: 1.618em;
+			border-bottom: 1px solid #dddddd;
+			border-top: 1px solid #dddddd;
+			padding: 15px 0;
+			
+			> span {
+				display: block;
+			}
+			
+		}
+		
+	}
+	
+	/* Sidebar Styles */
+	
+	.sidebar {
+		
+		input[type="submit"] {
+			margin-top: 1em;
+		}
+	
+		.button {
+			width: auto;
+		}
+		
+	}
+	
+	ul.cart_list li a,
+	ul.product_list_widget li a {
+		font-weight: normal;
+	}
+	
+	.widget_shopping_cart {
+		
+		.total {
+			border-top: 1px solid #dddddd;
+			margin-top: 10px;
+			padding: 10px 0 0;
+		}
+		
+		.widget_shopping_cart_content .buttons a.checkout {
+			float: right;
+		}
+		
+	}
+	
+	.widget_price_filter {
+	
+		.price_slider_wrapper .ui-widget-content {
+			background-color: #fff;
+			box-shadow: 0 0 2px rgba(0, 170, 255, 0.75) inset;
+		}
+	
+		.ui-slider {
+				
+			.ui-slider-handle {
+				background-color: $cuttz_blue;
+				box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.3) inset;
+				cursor: pointer;
+			}
+			
+			.ui-slider-range {
+				background-color: $cuttz_blue;
+			}
+
+		}
+
+	}
+	
+	.widget_layered_nav_filters ul li {
+		
+		float: none;
+		
+		a {
+			
+			color: inherit;
+			
+			&:before {
+				color: $cuttz_red;
+			}
+			
+		}
+		
+	}
+	
+	.widget_layered_nav ul li.chosen a:before {
+		color: $cuttz_red;
+	}
+	
+	/* Comment Styles */
+	
+	#reviews {
+		
+		#comments ol.commentlist {
+			
+			.comment-text {
+				border: 1px solid #ddd;
+				border-radius: 2px;
+			}
+			
+			li img.avatar {
+				background: #ddd;
+				border: 1px solid #ddd;
+			}
+			
+		}
+		
+	}
+	
+	/* Collapsed elements (coupons, returning customer login, etc.) */
+	
+	form.checkout_coupon,
+	form.login,
+	form.register {
+		background-color: $cuttz_light_gray;
+		border: 1px solid #eee;
+		border-radius: 0;
+	}
+	
+	/* WooCommerce Notices */
+	
+	.woocommerce-info {
+		
+		border-top-color: $cuttz_blue;
+		
+		&:before {
+			color: $cuttz_blue;
+		}
+		
+	}
+	
+	.woocommerce-message {
+	
+		border-top-color: $cuttz_green;
+		
+		&:before {
+			color: $cuttz_green;
+		}
+	
+	}
+	
+	.woocommerce-error {
+	
+		border-top-color: $cuttz_red;
+		
+		&:before {
+			color: $cuttz_red;
+		}
+	
+	}
+
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1023px) {
+	.pagewidth .site-container {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.genesis-nav-menu > .right {
+		float: none;
+	}
+	.cuttz-design .nav-primary .menu li a {
+		padding: 2em 1.5em;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.cuttz-design .site-title,
+	.cuttz-design .title-area {
+		text-align: center;
+	}
+	
+	.cuttz-style-one img.slide-right,
+	.cuttz-style-two img.slide-right {
+		margin-right: 0;
+	}
+	
+	.cuttz-style-one img.slide-left,
+	.cuttz-style-two img.slide-left {
+		margin-left: 0;
+	}
+	
+	.testimonial-area .one-sixth,
+	.testimonial-area .five-sixths {
+		float: left;
+		margin-left: 2.5641%;
+	}
+	
+	.testimonial-area .first {
+		margin-left: 0;
+	}
+	
+	.testimonial-area .one-sixth {
+		width: 14.5299%;
+	}
+	
+	.testimonial-area .five-sixths {
+		width: 82.906%;
+	}
+	
+	.cuttz-design .nav-primary .menu li a {
+		padding: 2em 1.2em;
+	}
+	
+	.cuttz-design ul.feature-tabs.tabs a {
+		font-size: 1em;
+	}
+	
+	.cuttz-design .column-grid {
+		margin-bottom: 1.618em;
+	}
+	
+	.cuttz-design .column-grid li {
+		padding: 8px 10px;
+	}
+	
+	.cuttz-design.woocommerce.post-type-archive-product ul.products li.product,
+	.cuttz-design.woocommerce-page.post-type-archive-product ul.products li.product {
+		width: 48%;
+		margin: 0 0 2.992em;
+	}
+	
+	.cuttz-design.woocommerce.woocommerce-order-received table.shop_table td,
+	.cuttz-design.woocommerce-page.woocommerce-order-received table.shop_table td,
+	.cuttz-design.woocommerce.woocommerce-account table.shop_table td,
+	.cuttz-design.woocommerce-page.woocommerce-account table.shop_table td {
+		padding: 8px 8px 4px 15px;
+	}
+	
+	.woocommerce table.my_account_orders tr td.order-actions,
+	.woocommerce-page table.my_account_orders tr td.order-actions {
+		margin-bottom: 0.618em;
+		padding-bottom: 0.618em !important;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.testimonial-area .one-sixth {
+		width: 23.0769%;
+	}
+	
+	.testimonial-area .five-sixths {
+		width: 74.359%;
+	}
+}
+
+@media only screen and (max-width: 570px) {
+	.cuttz-design .nav-primary .menu li a {
+		padding: 1.618em 1em;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.cuttz-design.woocommerce.woocommerce-checkout .woocommerce-checkout-review-order-table,
+	.cuttz-design.woocommerce-page.woocommerce-checkout .woocommerce-checkout-review-order-table,
+	.cuttz-design.woocommerce.woocommerce-account .woocommerce-checkout-review-order-table,
+	.cuttz-design.woocommerce-page.woocommerce-account .woocommerce-checkout-review-order-table,
+	.cuttz-design.woocommerce.woocommerce-checkout #payment,
+	.cuttz-design.woocommerce-page.woocommerce-checkout #payment,
+	.cuttz-design.woocommerce.woocommerce-account #payment,
+	.cuttz-design.woocommerce-page.woocommerce-account #payment {
+		float: none;
+		width: auto;
+	}
+	
+	.cuttz-design.woocommerce.woocommerce-checkout table.shop_table,
+	.cuttz-design.woocommerce-page.woocommerce-checkout table.shop_table {
+		border-right: 0 none;
+		padding-right: 0;
+		width: 100%;
+		padding-bottom: 1.618em;
+		margin-bottom: 1.618em;
+		border-bottom: 1px solid $cuttz_blue;
+	}
+	
+	.woocommerce table.shop_table_responsive tr:nth-child(2n) td,
+	.woocommerce-page table.shop_table_responsive tr:nth-child(2n) td {
+		background-color: transparent;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	.cuttz-style-one img,
+	.cuttz-style-two img {
+		display: none;
+	}
+	
+	.woocommerce .cart-collaterals .cross-sells ul.products li,
+	.woocommerce-page .cart-collaterals .cross-sells ul.products li {
+		width: auto;
+		float: none;
+	}
+	
+	.woocommerce .cart-collaterals ul.products li.product:nth-child(2n),
+	.woocommerce-page .cart-collaterals ul.products li.product:nth-child(2n) {
+		float: none;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+
+	.testimonial-area .one-sixth,
+	.testimonial-area .five-sixths {
+		float: none;
+		margin-left: 0;
+	}
+	
+	.testimonial-area .one-sixth {
+		display: none;
+	}
+	
+	.testimonial-area .five-sixths {
+		width: auto;
+	}
+	
+	.cuttz-design.woocommerce.post-type-archive-product ul.products li.product,
+	.cuttz-design.woocommerce-page.post-type-archive-product ul.products li.product {
+		width: auto;
+	}
+	
+	.cuttz-design.woocommerce div.product .woocommerce-tabs ul.tabs li a,
+	.cuttz-design.woocommerce-page div.product .woocommerce-tabs ul.tabs li a {
+		padding: 0.618em 0.5em;
+	}
+}

@@ -1,0 +1,1687 @@
+@charset "UTF-8"; 
+
+/*D*********************************************************************************
+******************** Make all your changes to style.scss **************************
+**** This file will be overwritten by style.scss and your changes will be lost ****
+**********************************************************************************/
+
+/**
+ * Cuttz Framework Core Skin
+ * Skin Name: Cuttz Design
+ * Highlights: Flat UI design, beautiful typography, multiple landing page styles
+ *//*
+ Table of contents
+ — Color Variables 
+ — Generic Styles
+ — Pagewidth Set-up Styles
+ — Breadcrumbs
+ — Entry meta
+ — Captions
+ — Author Box
+ — Comments
+ — Pitch
+ — Single Post Navigation
+ — Pagination
+ — Archive Description Box
+ — Forms styles — input, select, textarea
+ — Search form
+ — Buttons
+ — Site Header Styles
+ — Menu Styles
+ — Primary Nav Styles
+ — Secondary Nav Styles
+ — Content Styles
+ — Sidebar Styles
+ — Widgets Above Header Area Styles
+ — Widgets Below Header Area Styles
+ — Widgets Above Footer Area Styles
+ — After Entry Widgets
+ — Footer Widgets Styles
+ — Site Footer Styles
+ — Landing Page Styles
+ — Cuttz Style One
+ — Cuttz Style Two
+ — Utility CSS Styles 
+ — Highlight styles  
+ — Testimonial Styles 
+ — Blockquote Styles 
+ — Content Boxes 
+ — Alert & note styles
+ — CTA Buttons
+ — Simple buttons
+ — Big Buttons
+ — White Buttons
+ — Custom List Styles
+ — Collapsible Content
+ — Supporting CSS for pace.js
+ — WooCommerce Styles
+ —  Media Queries
+ *//* Color Variables *//* Generic Styles */::-moz-selection {
+  background: #1abc9c;
+  color: #fff;
+}
+::selection {
+  background: #1abc9c;
+  color: #fff;
+}
+.cuttz-design .cuttz-sb-before-header-wrap, .cuttz-design .cuttz-sb-after-header-wrap, .cuttz-design .site-inner .wrap, .cuttz-design .cuttz-sb-above-footer-wrap {
+  border-bottom: none;
+}
+a, a:hover, a:focus, a.cta-btn, a.white-btn, a.big-btn, input:focus, input, input:hover {
+  transition: all 0.3s ease-in 0s;
+  outline: 0;
+}
+a:hover {
+  text-decoration: none;
+}
+.widget-wrap a.cta-btn, .widget-wrap a.big-btn, .widget-wrap a.white-btn {
+  text-decoration: none;
+  text-align: center;
+}
+.content-divider {
+  padding-bottom: 0.618em;
+  margin-bottom: 2.618em;
+  border-bottom: 1px solid #dedede;
+  clear: both;
+}
+address {
+  font-style: normal;
+}
+/* Fancy Ampersand Style */.and {
+  font-family: Palatino, Baskerville, "Goudy Old Style", "Book Antiqua", serif;
+  font-style: italic;
+}
+/* Pagewidth Set-up Styles */body.pagewidth .site-container {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+/* Breadcrumbs */.cuttz-design .breadcrumb {
+  font-size: 0.75em;
+  padding: 0.618em;
+  border: 1px dotted #bfbfbf;
+  margin-bottom: 2.618em;
+}
+/* Entry meta — Date */.entry-time:before {
+  content: '\f073';
+  font-family: FontAwesome;
+  display: inline-block;
+  padding-right: 5px;
+}
+/* Captions */.wp-caption {
+  padding: 1em;
+  background-color: #f2f5f7;
+}
+.wp-caption .wp-caption-text {
+  font-variant: normal;
+  font-weight: inherit;
+  text-transform: none;
+  margin-bottom: 0;
+}
+/* Author Box */.cuttz-design .author-box {
+  background-color: #f2f5f7;
+  border: none;
+  border-top: 8px solid #1abc9c;
+  margin-bottom: 2.618em;
+  padding: 1.618em;
+}
+.cuttz-design .author-box .avatar {
+  border-radius: 50%;
+}
+/* Comments */.comment .avatar {
+  border-radius: 50%;
+}
+/* Pitch */.pitch {
+  font-size: 1.618rem;
+  font-weight: normal;
+}
+/* Single Post Nagivation */.cuttz-design.single .pagination-previous a, .cuttz-design.single .pagination-next a {
+  background-color: #eee;
+  padding: 1em 1.2em;
+  display: block;
+}
+.cuttz-design.single .pagination-previous a:hover, .cuttz-design.single .pagination-next a:hover {
+  color: #1abc9c;
+}
+.cuttz-design.single .pagination-previous {
+  margin-top: 1.618em;
+  margin-bottom: 1em;
+}
+.cuttz-design.single .pagination-next {
+  text-align: right;
+}
+/* Pagination */.cuttz-design .pagination, .cuttz-design .woocommerce-pagination {
+  font-weight: 500;
+}
+/* Archive Description Box */.archive .archive-description, .taxonomy .taxonomy-description {
+  background-color: rgba(217, 130, 166, 0.1);
+  border-color: rgba(217, 130, 166, 0.2);
+}
+.archive .archive-description .archive-title, .taxonomy .taxonomy-description .archive-title {
+  color: #0af;
+  font-variant: small-caps;
+}
+/* Forms styles — input, select, textarea */input, select, textarea {
+  font-weight: inherit;
+  box-shadow: none;
+}
+input:focus, textarea:focus {
+  border-color: #0af;
+}
+/* Search form */input[type="search"] {
+  background-image: url(images/search.png);
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
+/* Buttons */input[type="button"], input[type="reset"], input[type="submit"], .button, .entry-content .button, .landing-section .button {
+  border: none;
+  background-color: #1abc9c;
+  background-image: none;
+  text-align: center;
+  color: #fff;
+  padding: 0.618em 1.618em;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+.button, .entry-content .button, .landing-section .button {
+  text-decoration: none;
+}
+input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .button:hover, .entry-content .button:hover, .landing-section .button:hover {
+  background-color: #0af;
+}
+.button:hover, .entry-content .button:hover, .landing-section .button:hover {
+  color: #fff;
+}
+/* Site Header Styles */.cuttz-design .site-header {
+  background-color: #0af;
+}
+.cuttz-design .site-header .wrap {
+  background-color: transparent;
+  padding-top: 2.618em;
+  padding-bottom: 2.618em;
+}
+/* Menu Styles *//* Primary Nav Styles */.cuttz-design .nav-primary .wrap {
+  background-color: transparent;
+}
+.cuttz-design .nav-primary .menu li a {
+  padding: 2em 1.618em;
+}
+.cuttz-design .nav-primary .menu > li:first-child a {
+  margin-left: -1.618em;
+}
+.cuttz-design .nav-primary .sub-menu li a {
+  padding: 1em 1.618em;
+}
+.cuttz-design .nav-primary .menu li a:before {
+  display: inline-block;
+  font-family: 'FontAwesome';
+  padding-right: 7px;
+  font-weight: normal;
+}
+.cuttz-design .nav-primary .menu li.home > a:before {
+  content: '\f015';
+}
+.cuttz-design .nav-primary .menu li.about > a:before {
+  content: '\f0f4';
+}
+.cuttz-design .nav-primary .menu li.blog > a:before {
+  content: '\f044';
+}
+.cuttz-design .nav-primary .menu li.cart > a:before {
+  content: '\f07a';
+}
+.cuttz-design .nav-primary .menu li.contact > a:before {
+  content: '\f007';
+}
+.cuttz-design .nav-primary .menu li.account > a:before {
+  content: '\f090';
+}
+/* Secondary Nav Styles */.cuttz-design .nav-secondary .wrap {
+  background-color: transparent;
+  padding-top: 0;
+}
+.cuttz-design .nav-secondary .menu-secondary {
+  float: right;
+  display: table;
+  width: auto;
+}
+.cuttz-design .nav-secondary .menu > li:last-child a {
+  margin-right: -1em;
+}
+.cuttz-design .nav-secondary .menu-secondary li {
+  margin-bottom: 0;
+}
+.cuttz-design .nav-secondary .menu-secondary .sub-menu {
+  box-shadow: none;
+  border-left: none;
+}
+/* Mobile Menu Styles */.captivate .menu-toggle {
+  background-color: ;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  color: inherit;
+  border-bottom: 2px solid ;
+}
+.captivate .sub-menu-toggle {
+  background-color: ;
+  color: #fff;
+  right: 0;
+}
+/* Content Styles */.cuttz-design .site-inner .wrap {
+  padding-top: 3.618em;
+}
+.cuttz-design .entry-categories, .cuttz-design .entry-tags, .cuttz-design .entry-categories a, .cuttz-design .entry-tags a {
+  font-weight: inherit;
+}
+.cuttz-design .entry-categories::before, .cuttz-design .entry-tags::before {
+  color: #0af;
+}
+.cuttz-design .entry-footer .entry-meta {
+  padding: 1em 0;
+  border-top: 1px dotted #bfbfbf;
+  border-bottom: 1px dotted #bfbfbf;
+}
+.cuttz-design .entry {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.error404 .entry-title {
+  margin: 0 0 0.618em;
+}
+/* Sidebar Styles */.cuttz-design .sidebar .widget {
+  padding: 1.618em;
+  background-color: #f2f5f7;
+  border-top: 10px solid transparent;
+}
+.cuttz-design .sidebar .widget:nth-child(odd) {
+  border-color: #f8bc3a;
+}
+.cuttz-design .sidebar .widget:nth-child(odd) input[type="button"], .cuttz-design .sidebar .widget:nth-child(odd) input[type="reset"], .cuttz-design .sidebar .widget:nth-child(odd) input[type="submit"], .cuttz-design .sidebar .widget:nth-child(odd) .button {
+  background-color: #f8bc3a;
+}
+.cuttz-design .sidebar .widget:nth-child(even) {
+  border-color: #1abc9c;
+}
+.cuttz-design .sidebar .widget-title {
+  font-variant: normal;
+  letter-spacing: normal;
+}
+.cuttz-design .sidebar .widget-wrap > *:not(.widget-title) {
+  margin-bottom: 1em;
+}
+.cuttz-design .sidebar input[type="button"], .cuttz-design .sidebar input[type="reset"], .cuttz-design .sidebar input[type="submit"], .cuttz-design .sidebar .button {
+  width: 100%;
+}
+/* Widgets Above Header Area Styles */.cuttz-sb-before-header {
+  background-color: #f8bc3a;
+}
+.cuttz-sb-before-header .wrap {
+  background-color: transparent;
+}
+.cuttz-sb-before-header .widgettitle, .cuttz-sb-before-header .widget-wrap, .cuttz-sb-before-header .widget-wrap a {
+  color: #fff;
+}
+/* Widgets Below Header Area Styles */.cuttz-sb-after-header .widget {
+  background-color: rgba(248, 188, 58, 0.1);
+  border: 3px double rgba(248, 188, 58, 0.2);
+  padding: 1.618em;
+}
+/* Widgets Above Footer Area Styles */.cuttz-sb-above-footer {
+  background-color: #0af;
+  text-align: center;
+  border-top: 10px solid #eee;
+}
+.cuttz-sb-above-footer .wrap {
+  background-color: transparent;
+  padding-top: 2.618em;
+}
+.cuttz-sb-above-footer .widgettitle, .cuttz-sb-above-footer .widget-wrap, .cuttz-sb-above-footer .widget-wrap a {
+  color: #fff;
+}
+.cuttz-sb-above-footer .white-btn, .cuttz-sb-above-footer .cta-btn {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* After Entry Widgets */.after-entry .widget {
+  padding: 1.618em;
+  background-color: #f2f5f7;
+  border-top: 8px solid #d982a6;
+}
+/* Footer Widgets Styles */.cuttz-design .footer-widgets {
+  background-color: #2a2d2e;
+  border-top: 3px solid #0af;
+  border-bottom: 1px solid #404040;
+}
+.cuttz-design .footer-widgets .wrap {
+  padding-top: 2.618em;
+  padding-bottom: 0;
+  background-color: transparent;
+}
+.cuttz-design .footer-widgets a {
+  color: #aaa;
+  text-decoration: none !important;
+  border-bottom: 1px dotted #aaa;
+}
+/* Site Footer Styles */.cuttz-design .site-footer {
+  background-color: #282a2b;
+}
+.cuttz-design .site-footer .wrap {
+  background-color: transparent;
+}
+.cuttz-design .site-footer .creds {
+  margin-top: 0.618em;
+}
+.cuttz-design .site-footer .creds a {
+  border-bottom: none;
+  font-weight: 500;
+}
+.cuttz-design .site-footer .creds a:hover {
+  color: #0af;
+}
+.cuttz-design .site-footer .cuttz-nav-footer li a {
+  font-weight: 500;
+}
+/* Landing Page Styles *//* Cuttz Style One */.cuttz-style-one {
+  /* Landing page images */
+}
+.cuttz-style-one .post-edit-link {
+  display: none;
+}
+.cuttz-style-one .wrap {
+  padding-bottom: 2.618em;
+}
+.cuttz-style-one .landing-section-title {
+  font-size: 2.45em;
+  text-transform: capitalize;
+  font-weight: inherit;
+  line-height: 1.618em;
+}
+.cuttz-style-one .cta-btn {
+  border: 2px solid #fff;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+  padding: 1em 1.618em;
+  display: table;
+  outline: none;
+}
+.cuttz-style-one .cta-btn .fa {
+  padding-right: 8px;
+}
+.cuttz-style-one .after-header-first {
+  background-color: #0af;
+}
+.cuttz-style-one .after-header-first .wrap {
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+}
+.cuttz-style-one .after-header-first .landing-section-title {
+  color: #fff;
+  font-size: 3.15em;
+}
+.cuttz-style-one .after-header-first .landing-section-content {
+  font-size: 2em;
+}
+.cuttz-style-one .after-header-first .new-line {
+  display: block;
+}
+.cuttz-style-one .after-header-first .cta-btn {
+  color: #fff;
+  padding: 0.381em 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cuttz-style-one .after-header-first .cta-btn:hover {
+  background-color: #f8bc3a;
+}
+.cuttz-style-one .after-header-second {
+  background-color: #f2f5f7;
+}
+.cuttz-style-one .after-header-second .wrap {
+  background-color: transparent;
+}
+.cuttz-style-one .after-header-second .cta-btn {
+  color: #1abc9c;
+  border-color: #1abc9c;
+  margin-top: 2em;
+  font-weight: normal;
+}
+.cuttz-style-one .after-header-second .cta-btn:hover {
+  color: #d982a6;
+  border-color: #d982a6;
+}
+.cuttz-style-one .after-header-third {
+  background-color: #fff;
+}
+.cuttz-style-one .after-header-third .wrap {
+  background-color: transparent;
+}
+.cuttz-style-one .after-header-third .cta-btn {
+  color: #d982a6;
+  border-color: #d982a6;
+  font-weight: normal;
+  margin-top: 2em;
+}
+.cuttz-style-one .after-header-third .cta-btn:hover {
+  color: #1abc9c;
+  border-color: #1abc9c;
+}
+.cuttz-style-one .site-inner {
+  background-color: #d982a6;
+  color: #fff;
+  font-size: 3.25em;
+  text-align: center;
+}
+.cuttz-style-one .site-inner .wrap {
+  background-color: transparent;
+  padding-top: 1em;
+  padding-bottom: 0;
+}
+.cuttz-style-one .site-inner .entry {
+  padding-bottom: 0;
+}
+.cuttz-style-one .site-inner .entry-content {
+  margin-bottom: 0;
+}
+.cuttz-style-one .site-inner .entry-content p {
+  margin-bottom: 1em;
+}
+.cuttz-style-one .before-footer-first {
+  background-color: #fff;
+}
+.cuttz-style-one .before-footer-first .wrap {
+  background-color: transparent;
+}
+.cuttz-style-one .before-footer-first .cta-btn {
+  color: #1abc9c;
+  border-color: #1abc9c;
+  font-weight: normal;
+  margin-top: 2em;
+}
+.cuttz-style-one .before-footer-first .cta-btn:hover {
+  color: #d982a6;
+  border-color: #d982a6;
+}
+.cuttz-style-one .before-footer-second {
+  background-color: #f2f5f7;
+}
+.cuttz-style-one .before-footer-second .wrap {
+  background-color: transparent;
+}
+.cuttz-style-one .before-footer-second .landing-section-title {
+  text-align: center;
+}
+.cuttz-style-one .before-footer-third {
+  background-color: #0af;
+  color: #fff;
+  text-align: center;
+}
+.cuttz-style-one .before-footer-third .wrap {
+  background-color: transparent;
+}
+.cuttz-style-one .before-footer-third .landing-section-title {
+  color: #fff;
+  font-size: 2.75em;
+}
+.cuttz-style-one .before-footer-third .landing-section-content {
+  font-size: 2em;
+}
+.cuttz-style-one .before-footer-third .cta-btn {
+  color: #fff;
+  font-size: 1.618rem;
+  padding: 0.381em 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cuttz-style-one .before-footer-third .cta-btn .fa {
+  padding-right: 0.5em;
+}
+.cuttz-style-one .before-footer-third .cta-btn:hover {
+  background-color: #f8bc3a;
+}
+.cuttz-style-one img.slide-right {
+  margin-right: -50px;
+}
+.cuttz-style-one img.slide-left {
+  margin-left: -40px;
+}
+/* Cuttz Style Two */.cuttz-style-two {
+  /* Landing page images */
+}
+.cuttz-style-two.pagewidth {
+  background-color: #3d4042;
+}
+.cuttz-style-two .post-edit-link {
+  display: none;
+}
+.cuttz-style-two .wrap {
+  padding-bottom: 2.618em;
+}
+.cuttz-style-two .landing-section-title {
+  font-size: 2.45em;
+  text-transform: capitalize;
+  font-weight: inherit;
+  line-height: 1.618em;
+}
+.cuttz-style-two .cta-btn {
+  border: 2px solid #fff;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+  padding: 1em 1.618em;
+  display: table;
+  outline: none;
+}
+.cuttz-style-two .cta-btn .fa {
+  padding-right: 8px;
+}
+.cuttz-style-two .after-header-first {
+  background-color: #0af;
+}
+.cuttz-style-two .after-header-first .wrap {
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+}
+.cuttz-style-two .after-header-first .landing-section-title {
+  color: #fff;
+  font-size: 3.15em;
+}
+.cuttz-style-two .after-header-first .landing-section-content {
+  font-size: 2em;
+}
+.cuttz-style-two .after-header-first .new-line {
+  display: block;
+}
+.cuttz-style-two .after-header-first .cta-btn {
+  color: #fff;
+  padding: 0.381em 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cuttz-style-two .after-header-first .cta-btn:hover {
+  background-color: #f8bc3a;
+}
+.cuttz-style-two .after-header-second {
+  background-color: #f2f5f7;
+}
+.cuttz-style-two .after-header-second .wrap {
+  background-color: transparent;
+}
+.cuttz-style-two .after-header-second .cta-btn {
+  color: #1abc9c;
+  border-color: #1abc9c;
+  margin-top: 2em;
+  font-weight: normal;
+}
+.cuttz-style-two .after-header-second .cta-btn:hover {
+  color: #d982a6;
+  border-color: #d982a6;
+}
+.cuttz-style-two .after-header-third {
+  background-color: #fff;
+}
+.cuttz-style-two .after-header-third .wrap {
+  background-color: transparent;
+}
+.cuttz-style-two .after-header-third .cta-btn {
+  color: #d982a6;
+  border-color: #d982a6;
+  font-weight: normal;
+  margin-top: 2em;
+}
+.cuttz-style-two .after-header-third .cta-btn:hover {
+  color: #1abc9c;
+  border-color: #1abc9c;
+}
+.cuttz-style-two .site-inner {
+  background-color: #d982a6;
+  color: #fff;
+  font-size: 3.25em;
+  text-align: center;
+}
+.cuttz-style-two .site-inner .wrap {
+  background-color: transparent;
+  padding-top: 1em;
+  padding-bottom: 0;
+}
+.cuttz-style-two .site-inner .entry {
+  padding-bottom: 0;
+}
+.cuttz-style-two .site-inner .entry-content {
+  margin-bottom: 0;
+}
+.cuttz-style-two .site-inner .entry-content p {
+  margin-bottom: 1em;
+}
+.cuttz-style-two .before-footer-first {
+  background-color: #fff;
+}
+.cuttz-style-two .before-footer-first .wrap {
+  background-color: transparent;
+}
+.cuttz-style-two .before-footer-first .cta-btn {
+  color: #1abc9c;
+  border-color: #1abc9c;
+  font-weight: normal;
+  margin-top: 2em;
+}
+.cuttz-style-two .before-footer-first .cta-btn:hover {
+  color: #d982a6;
+  border-color: #d982a6;
+}
+.cuttz-style-two .before-footer-second {
+  background-color: #f2f5f7;
+}
+.cuttz-style-two .before-footer-second .wrap {
+  background-color: transparent;
+}
+.cuttz-style-two .before-footer-second .landing-section-title {
+  text-align: center;
+}
+.cuttz-style-two .before-footer-third {
+  background-color: #0af;
+  color: #fff;
+  text-align: center;
+}
+.cuttz-style-two .before-footer-third .wrap {
+  background-color: transparent;
+}
+.cuttz-style-two .before-footer-third .landing-section-title {
+  color: #fff;
+  font-size: 2.75em;
+}
+.cuttz-style-two .before-footer-third .landing-section-content {
+  font-size: 2em;
+}
+.cuttz-style-two .before-footer-third .cta-btn {
+  color: #fff;
+  font-size: 1.618rem;
+  padding: 0.381em 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cuttz-style-two .before-footer-third .cta-btn .fa {
+  padding-right: 0.5em;
+}
+.cuttz-style-two .before-footer-third .cta-btn:hover {
+  background-color: #f8bc3a;
+}
+.cuttz-style-two img.slide-right {
+  margin-right: -20px;
+}
+.cuttz-style-two img.slide-left {
+  margin-left: -20px;
+}
+/* Utility CSS Styles *//* Highlight styles */.highlight-light {
+  padding: 1.618em 2.618em;
+  background-color: #f1f0f1;
+  border: 1px solid #dedede;
+  margin-bottom: 2.618em;
+}
+.highlight-dark {
+  padding: 1.618em 2.618em;
+  background-color: #555;
+  border: 1px solid #404040;
+  margin-bottom: 2.618em;
+}
+.highlight-dark h2, .highlight-dark h3, .highlight-dark h4, .highlight-dark h5, .highlight-dark h6 {
+  color: #fff;
+}
+/* Testimonial Styles */.testimonial-area {
+  margin: 0 1.618em 5em;
+}
+.testimonial-area img {
+  border-radius: 50%;
+}
+.testimonial-area blockquote:before {
+  content: none;
+}
+.testimonial-area blockquote {
+  margin: 0;
+  color: #fff;
+  font-weight: normal;
+  border: none;
+  padding-left: 0;
+}
+.testimonial-area .testimonial {
+  padding: 1.618em;
+  color: #fff;
+}
+.testimonial-area .testimonial-left {
+  border-right: 8px solid rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+.testimonial-area .testimonial-right {
+  border-left: 8px solid rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+.testimonial-area .testimonial-blue {
+  background-color: #0af;
+}
+.testimonial-area .testimonial-green {
+  background-color: #1abc9c;
+}
+.testimonial-area .testimonial-yellow {
+  background-color: #f8bc3a;
+}
+.testimonial-area .testimonial-pink {
+  background-color: #d982a6;
+}
+.testimonial-area .testimonial-red {
+  background-color: #d15247;
+}
+.testimonial-area figcaption {
+  font-variant: small-caps;
+  font-weight: normal;
+}
+.testimonial-area figcaption:before {
+  content: '—';
+  display: inline-block;
+  padding-right: 5px;
+}
+/* Blockquote Styles */blockquote:before {
+  content: none;
+}
+blockquote {
+  border-left: 5px solid #808080;
+  color: ;
+  padding-left: 1.618em;
+}
+blockquote.green {
+  color: #1abc9c;
+  border-color: #1abc9c;
+}
+blockquote.blue {
+  color: #0af;
+  border-color: #0af;
+}
+blockquote.yellow {
+  color: #f8bc3a;
+  border-color: #f8bc3a;
+}
+blockquote.red {
+  color: #d15247;
+  border-color: #d15247;
+}
+blockquote.pink {
+  color: #d982a6;
+  border-color: #d982a6;
+}
+/* Content Boxes */.content-box {
+  padding: 1.618em;
+  margin-bottom: 1.618em;
+}
+.content-box.dark {
+  color: #fff;
+  font-weight: normal;
+}
+.content-box.dark h1, .content-box.dark h2, .content-box.dark h3, .content-box.dark h4, .content-box.dark h5, .content-box.dark h6 {
+  color: #fff;
+}
+.content-box.blue.light {
+  background-color: rgba(0, 170, 255, 0.1);
+  border: 1px solid rgba(0, 170, 255, 0.2);
+}
+.content-box.blue.dark {
+  background-color: #0af;
+}
+.content-box.green.light {
+  background-color: rgba(26, 188, 156, 0.1);
+  border: 1px solid rgba(26, 188, 156, 0.2);
+}
+.content-box.green.dark {
+  background-color: #1abc9c;
+}
+.content-box.yellow.light {
+  background-color: rgba(248, 188, 58, 0.1);
+  border: 1px solid rgba(248, 188, 58, 0.2);
+}
+.content-box.yellow.dark {
+  background-color: #f8bc3a;
+}
+.content-box.red.light {
+  background-color: rgba(209, 82, 71, 0.1);
+  border: 1px solid rgba(209, 82, 71, 0.2);
+}
+.content-box.red.dark {
+  background-color: #d15247;
+}
+.content-box.pink.light {
+  background-color: rgba(217, 130, 166, 0.1);
+  border: 1px solid rgba(217, 130, 166, 0.2);
+}
+.content-box.pink.dark {
+  background-color: #d982a6;
+}
+/* Alert & note styles */.entry-content p.alert, .landing-section p.alert, .entry-content p.note, .landing-section p.note {
+  border-left-width: 5px;
+  padding: 1.618em;
+}
+/* CTA Buttons *//* Simple buttons */.cta-btn.fill.cuttz-blue {
+  background-color: #0af;
+  color: #fff;
+}
+.cta-btn.fill.cuttz-blue:hover {
+  background-color: #0099e6;
+}
+.cta-btn.fill.cuttz-green {
+  background-color: #1abc9c;
+  color: #fff;
+}
+.cta-btn.fill.cuttz-green:hover {
+  background-color: #17a689;
+}
+.cta-btn.fill.cuttz-pink {
+  background-color: #d982a6;
+  color: #fff;
+}
+.cta-btn.fill.cuttz-pink:hover {
+  background-color: #d36e98;
+}
+.cta-btn.fill.cuttz-yellow {
+  background-color: #f8bc3a;
+  color: #fff;
+}
+.cta-btn.fill.cuttz-yellow:hover {
+  background-color: #f7b421;
+}
+.cta-btn.fill.cuttz-red {
+  background-color: #d15247;
+  color: #fff;
+}
+.cta-btn.fill.cuttz-red:hover {
+  background-color: #cc3f33;
+}
+.cta-btn.transparent.cuttz-blue {
+  color: #0af;
+  border-color: #0af;
+}
+.cta-btn.transparent.cuttz-blue:hover {
+  color: #08c;
+  border-color: #08c;
+}
+.cta-btn.transparent.cuttz-green {
+  color: #1abc9c;
+  border-color: #1abc9c;
+}
+.cta-btn.transparent.cuttz-green:hover {
+  color: #148f77;
+  border-color: #148f77;
+}
+.cta-btn.transparent.cuttz-pink {
+  color: #d982a6;
+  border-color: #d982a6;
+}
+.cta-btn.transparent.cuttz-pink:hover {
+  color: #cd5b8a;
+  border-color: #cd5b8a;
+}
+.cta-btn.transparent.cuttz-yellow {
+  color: #f8bc3a;
+  border-color: #f8bc3a;
+}
+.cta-btn.transparent.cuttz-yellow:hover {
+  color: #f6ab09;
+  border-color: #f6ab09;
+}
+.cta-btn.transparent.cuttz-red {
+  color: #d15247;
+  border-color: #d15247;
+}
+.cta-btn.transparent.cuttz-red:hover {
+  color: #b7392e;
+  border-color: #b7392e;
+}
+/* Big Buttons */.big-btn.fill.cuttz-blue {
+  background-color: #0af;
+  color: #fff;
+  border-color: #08c;
+}
+.big-btn.fill.cuttz-blue:hover {
+  background-color: #fff;
+  color: #0af;
+  border-color: #0af;
+}
+.big-btn.fill.cuttz-green {
+  background-color: #1abc9c;
+  color: #fff;
+  border-color: #148f77;
+}
+.big-btn.fill.cuttz-green:hover {
+  background-color: #fff;
+  color: #1abc9c;
+  border-color: #1abc9c;
+}
+.big-btn.fill.cuttz-pink {
+  background-color: #d982a6;
+  color: #fff;
+  border-color: #cd5b8a;
+}
+.big-btn.fill.cuttz-pink:hover {
+  background-color: #fff;
+  color: #d982a6;
+  border-color: #d982a6;
+}
+.big-btn.fill.cuttz-yellow {
+  background-color: #f8bc3a;
+  color: #fff;
+  border-color: #f6ab09;
+}
+.big-btn.fill.cuttz-yellow:hover {
+  background-color: #fff;
+  color: #f8bc3a;
+  border-color: #f8bc3a;
+}
+.big-btn.fill.cuttz-red {
+  background-color: #d15247;
+  color: #fff;
+  border-color: #b7392e;
+}
+.big-btn.fill.cuttz-red:hover {
+  background-color: #fff;
+  color: #d15247;
+  border-color: #d15247;
+}
+.big-btn.transparent.cuttz-blue {
+  background-color: #fff;
+  color: #0af;
+  border-color: #0af;
+}
+.big-btn.transparent.cuttz-blue:hover {
+  background-color: #0af;
+  color: #fff;
+  border-color: #08c;
+}
+.big-btn.transparent.cuttz-green {
+  background-color: #fff;
+  color: #1abc9c;
+  border-color: #1abc9c;
+}
+.big-btn.transparent.cuttz-green:hover {
+  background-color: #1abc9c;
+  color: #fff;
+  border-color: #148f77;
+}
+.big-btn.transparent.cuttz-pink {
+  background-color: #fff;
+  color: #d982a6;
+  border-color: #d982a6;
+}
+.big-btn.transparent.cuttz-pink:hover {
+  background-color: #d982a6;
+  color: #fff;
+  border-color: #cd5b8a;
+}
+.big-btn.transparent.cuttz-yellow {
+  background-color: #fff;
+  color: #f8bc3a;
+  border-color: #f8bc3a;
+}
+.big-btn.transparent.cuttz-yellow:hover {
+  background-color: #f8bc3a;
+  color: #fff;
+  border-color: #f6ab09;
+}
+.big-btn.transparent.cuttz-red {
+  background-color: #fff;
+  color: #d15247;
+  border-color: #d15247;
+}
+.big-btn.transparent.cuttz-red:hover {
+  background-color: #d15247;
+  color: #fff;
+  border-color: #b7392e;
+}
+/* White Buttons */.white-btn.fill.cuttz-blue:hover {
+  background-color: #0af;
+  color: #fff;
+}
+.white-btn.fill.cuttz-green:hover {
+  background-color: #1abc9c;
+  color: #fff;
+}
+.white-btn.fill.cuttz-pink:hover {
+  background-color: #d982a6;
+  color: #fff;
+}
+.white-btn.fill.cuttz-yellow:hover {
+  background-color: #f8bc3a;
+  color: #fff;
+}
+.white-btn.fill.cuttz-red:hover {
+  background-color: #d15247;
+  color: #fff;
+}
+.white-btn.transparent.cuttz-blue:hover {
+  border-color: #0af;
+  color: #0af;
+}
+.white-btn.transparent.cuttz-green:hover {
+  border-color: #1abc9c;
+  color: #1abc9c;
+}
+.white-btn.transparent.cuttz-pink:hover {
+  border-color: #d982a6;
+  color: #d982a6;
+}
+.white-btn.transparent.cuttz-yellow:hover {
+  border-color: #f8bc3a;
+  color: #f8bc3a;
+}
+.white-btn.transparent.cuttz-red:hover {
+  border-color: #d15247;
+  color: #d15247;
+}
+/* Custom List Styles */.cuttz-list.cuttz-blue ul li:before {
+  color: #0af;
+}
+.cuttz-list.cuttz-pink ul li:before {
+  color: #d982a6;
+}
+.cuttz-list.cuttz-green ul li:before {
+  color: #1abc9c;
+}
+.cuttz-list.cuttz-yellow ul li:before {
+  color: #f8bc3a;
+}
+.cuttz-list.cuttz-red ul li:before {
+  color: #d15247;
+}
+/* Collapsible Content */.collapsible-heading a:hover {
+  background-color: rgba(0, 170, 255, 0.1);
+  border-color: rgba(0, 170, 255, 0.1);
+}
+.collapsible-heading.opened a {
+  background: #0af;
+}
+/* Supporting CSS for pace.js used for page load effect */.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2000;
+  -webkit-transform: translate3d(0, -50px, 0);
+  -ms-transform: translate3d(0, -50px, 0);
+  transform: translate3d(0, -50px, 0);
+  -webkit-transition: -webkit-transform 0.5s ease-out;
+  -ms-transition: -webkit-transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+}
+.pace.pace-active {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.pace .pace-progress {
+  display: block;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  pointer-events: none;
+}
+/* WooCommerce Styles */.cuttz-design.woocommerce, .cuttz-design.woocommerce-page {
+  /* Shop page */
+  /* Cart Page */
+  /* Checkout Page */
+  /* Order Received page */
+  /* My Account page */
+  /* View Order page */
+  /* Edit Account page */
+  /* Single Product */
+  /* Sidebar Styles */
+  /* Comment Styles */
+  /* Collapsed elements (coupons, returning customer login, etc.) */
+  /* WooCommerce Notices */
+}
+.cuttz-design.woocommerce #respond input#submit, .cuttz-design.woocommerce-page #respond input#submit, .cuttz-design.woocommerce a.button, .cuttz-design.woocommerce-page a.button, .cuttz-design.woocommerce button.button, .cuttz-design.woocommerce-page button.button, .cuttz-design.woocommerce input.button, .cuttz-design.woocommerce-page input.button {
+  border: none;
+  background-color: #0af;
+  background-image: none;
+  text-align: center;
+  color: #fff;
+  padding: 0.618em 1em;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 0;
+}
+.cuttz-design.woocommerce #respond input#submit:hover, .cuttz-design.woocommerce-page #respond input#submit:hover, .cuttz-design.woocommerce a.button:hover, .cuttz-design.woocommerce-page a.button:hover, .cuttz-design.woocommerce button.button:hover, .cuttz-design.woocommerce-page button.button:hover, .cuttz-design.woocommerce input.button:hover, .cuttz-design.woocommerce-page input.button:hover {
+  background-color: #1abc9c;
+  color: #fff;
+}
+.cuttz-design.woocommerce p.lost_password a, .cuttz-design.woocommerce-page p.lost_password a {
+  text-decoration: none;
+}
+.cuttz-design.woocommerce span.onsale, .cuttz-design.woocommerce-page span.onsale, .cuttz-design.woocommerce ul.products li.product .onsale, .cuttz-design.woocommerce-page ul.products li.product .onsale {
+  background: rgba(0, 0, 0, 0) url("images/sale-flash.png") no-repeat scroll center center / 80px 80px;
+}
+.cuttz-design.woocommerce.post-type-archive-product ul.products li.product, .cuttz-design.woocommerce-page.post-type-archive-product ul.products li.product, .cuttz-design.woocommerce.archive ul.products li.product, .cuttz-design.woocommerce-page.archive ul.products li.product {
+  margin: 0 2.5641% 2.618em 0;
+  width: 31.6239%;
+}
+.cuttz-design.woocommerce.post-type-archive-product ul.products li.product.last, .cuttz-design.woocommerce-page.post-type-archive-product ul.products li.product.last, .cuttz-design.woocommerce.archive ul.products li.product.last, .cuttz-design.woocommerce-page.archive ul.products li.product.last {
+  margin-right: 0;
+}
+.cuttz-design.woocommerce ul.products li.product.product-category h3, .cuttz-design.woocommerce-page ul.products li.product.product-category h3 {
+  text-align: center;
+}
+.cuttz-design.woocommerce ul.products li.product.product-category mark, .cuttz-design.woocommerce-page ul.products li.product.product-category mark {
+  background: none;
+  color: #0af;
+}
+.cuttz-design.woocommerce ul.products li.product:last-of-type, .cuttz-design.woocommerce-page ul.products li.product:last-of-type {
+  border-bottom: 0 none;
+  padding-bottom: 0;
+}
+.cuttz-design.woocommerce ul.products li.product a img, .cuttz-design.woocommerce-page ul.products li.product a img {
+  border: 1px solid #ddd;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  padding: 5px;
+}
+.cuttz-design.woocommerce ul.products li.product h3, .cuttz-design.woocommerce-page ul.products li.product h3 {
+  font-weight: normal;
+  font-size: 1.17em;
+}
+.cuttz-design.woocommerce ul.products li.product .price, .cuttz-design.woocommerce-page ul.products li.product .price {
+  font-size: 1em;
+  color: #757575;
+}
+.cuttz-design.woocommerce ul.products li.product .price del, .cuttz-design.woocommerce-page ul.products li.product .price del {
+  font-size: 0.8em;
+  opacity: 0.8;
+}
+.cuttz-design.woocommerce ul.products li.product .price ins, .cuttz-design.woocommerce-page ul.products li.product .price ins {
+  font-weight: normal;
+}
+.cuttz-design.woocommerce ul.products li.product .no-stock-notice, .cuttz-design.woocommerce-page ul.products li.product .no-stock-notice {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+.cuttz-design.woocommerce a.added_to_cart, .cuttz-design.woocommerce-page a.added_to_cart {
+  background-color: #1abc9c;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.8em;
+  margin-top: 0.618em;
+  padding: 0.309em 0.618em;
+}
+.cuttz-design.woocommerce a.remove, .cuttz-design.woocommerce-page a.remove {
+  color:  !important;
+  text-decoration: none;
+}
+.cuttz-design.woocommerce a.remove:hover, .cuttz-design.woocommerce-page a.remove:hover {
+  color: #fff !important;
+  background: #d15247 !important;
+}
+.cuttz-design.woocommerce table.cart th, .cuttz-design.woocommerce-page table.cart th {
+  font-size: 1.15em;
+}
+.cuttz-design.woocommerce table.cart td.actions .coupon .input-text, .cuttz-design.woocommerce-page table.cart td.actions .coupon .input-text {
+  border: 1px solid #ddd;
+  box-sizing: inherit;
+}
+.cuttz-design.woocommerce table.shop_table th, .cuttz-design.woocommerce-page table.shop_table th {
+  font-size: 1.15em;
+}
+.cuttz-design.woocommerce .cart-collaterals .cross-sells h2, .cuttz-design.woocommerce-page .cart-collaterals .cross-sells h2 {
+  text-transform: capitalize;
+}
+.cuttz-design.woocommerce .cart-collaterals .cart_totals th, .cuttz-design.woocommerce-page .cart-collaterals .cart_totals th {
+  font-size: 1.15em;
+}
+.cuttz-design.woocommerce .woocommerce form .form-row .required, .cuttz-design.woocommerce-page .woocommerce form .form-row .required {
+  color: #1abc9c;
+  font-weight: normal;
+  position: relative;
+  top: -4px;
+}
+.cuttz-design.woocommerce #ship-to-different-address label, .cuttz-design.woocommerce-page #ship-to-different-address label {
+  margin-right: 8px;
+}
+.cuttz-design.woocommerce.woocommerce-checkout input[type="text"], .cuttz-design.woocommerce-page.woocommerce-checkout input[type="text"], .cuttz-design.woocommerce.woocommerce-account input[type="text"], .cuttz-design.woocommerce-page.woocommerce-account input[type="text"], .cuttz-design.woocommerce.woocommerce-checkout input[type="email"], .cuttz-design.woocommerce-page.woocommerce-checkout input[type="email"], .cuttz-design.woocommerce.woocommerce-account input[type="email"], .cuttz-design.woocommerce-page.woocommerce-account input[type="email"] {
+  padding: 0.618em;
+}
+.cuttz-design.woocommerce.woocommerce-checkout #customer_details, .cuttz-design.woocommerce-page.woocommerce-checkout #customer_details, .cuttz-design.woocommerce.woocommerce-account #customer_details, .cuttz-design.woocommerce-page.woocommerce-account #customer_details {
+  margin-bottom: 1.618em;
+}
+.cuttz-design.woocommerce.woocommerce-checkout h3#order_review_heading:before, .cuttz-design.woocommerce-page.woocommerce-checkout h3#order_review_heading:before, .cuttz-design.woocommerce.woocommerce-account h3#order_review_heading:before, .cuttz-design.woocommerce-page.woocommerce-account h3#order_review_heading:before {
+  display: inline-block;
+  font-family: 'FontAwesome';
+  padding-right: 10px;
+  content: '\f07a';
+}
+.cuttz-design.woocommerce.woocommerce-checkout .woocommerce-checkout-review-order, .cuttz-design.woocommerce-page.woocommerce-checkout .woocommerce-checkout-review-order, .cuttz-design.woocommerce.woocommerce-account .woocommerce-checkout-review-order, .cuttz-design.woocommerce-page.woocommerce-account .woocommerce-checkout-review-order {
+  border: 0 none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  margin: 1.309em 2px;
+  padding: 20px 30px;
+}
+.cuttz-design.woocommerce.woocommerce-checkout .woocommerce-checkout-review-order-table, .cuttz-design.woocommerce-page.woocommerce-checkout .woocommerce-checkout-review-order-table, .cuttz-design.woocommerce.woocommerce-account .woocommerce-checkout-review-order-table, .cuttz-design.woocommerce-page.woocommerce-account .woocommerce-checkout-review-order-table, .cuttz-design.woocommerce.woocommerce-checkout #payment, .cuttz-design.woocommerce-page.woocommerce-checkout #payment, .cuttz-design.woocommerce.woocommerce-account #payment, .cuttz-design.woocommerce-page.woocommerce-account #payment {
+  float: left;
+  width: 48.71795%;
+  margin-left: 2.5641%;
+}
+.cuttz-design.woocommerce.woocommerce-checkout table.shop_table, .cuttz-design.woocommerce-page.woocommerce-checkout table.shop_table, .cuttz-design.woocommerce.woocommerce-account table.shop_table, .cuttz-design.woocommerce-page.woocommerce-account table.shop_table {
+  margin-left: 0;
+  border: 0 none;
+  padding: 0 20px 0 0;
+  border-radius: 0;
+  border-right: 1px solid #0af;
+  margin-bottom: 0;
+}
+.cuttz-design.woocommerce.woocommerce-checkout table.shop_table td, .cuttz-design.woocommerce-page.woocommerce-checkout table.shop_table td, .cuttz-design.woocommerce.woocommerce-account table.shop_table td, .cuttz-design.woocommerce-page.woocommerce-account table.shop_table td {
+  padding: 6px 15px 6px 0;
+  border-top: 0 none;
+}
+.cuttz-design.woocommerce.woocommerce-checkout table.shop_table th, .cuttz-design.woocommerce-page.woocommerce-checkout table.shop_table th, .cuttz-design.woocommerce.woocommerce-account table.shop_table th, .cuttz-design.woocommerce-page.woocommerce-account table.shop_table th {
+  padding: 9px 15px 9px 0;
+}
+.cuttz-design.woocommerce.woocommerce-checkout table.shop_table thead th, .cuttz-design.woocommerce-page.woocommerce-checkout table.shop_table thead th, .cuttz-design.woocommerce.woocommerce-account table.shop_table thead th, .cuttz-design.woocommerce-page.woocommerce-account table.shop_table thead th {
+  border-bottom: 2px solid #ddd;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.cuttz-design.woocommerce.woocommerce-checkout table.shop_table tbody th, .cuttz-design.woocommerce-page.woocommerce-checkout table.shop_table tbody th, .cuttz-design.woocommerce.woocommerce-account table.shop_table tbody th, .cuttz-design.woocommerce-page.woocommerce-account table.shop_table tbody th, .cuttz-design.woocommerce.woocommerce-checkout table.shop_table tbody td, .cuttz-design.woocommerce-page.woocommerce-checkout table.shop_table tbody td, .cuttz-design.woocommerce.woocommerce-account table.shop_table tbody td, .cuttz-design.woocommerce-page.woocommerce-account table.shop_table tbody td {
+  font-weight: normal;
+}
+.cuttz-design.woocommerce.woocommerce-checkout table.shop_table tfoot th, .cuttz-design.woocommerce-page.woocommerce-checkout table.shop_table tfoot th, .cuttz-design.woocommerce.woocommerce-account table.shop_table tfoot th, .cuttz-design.woocommerce-page.woocommerce-account table.shop_table tfoot th, .cuttz-design.woocommerce.woocommerce-checkout table.shop_table tfoot td, .cuttz-design.woocommerce-page.woocommerce-checkout table.shop_table tfoot td, .cuttz-design.woocommerce.woocommerce-account table.shop_table tfoot td, .cuttz-design.woocommerce-page.woocommerce-account table.shop_table tfoot td {
+  border-top: 0 none;
+  font-weight: normal;
+}
+.cuttz-design.woocommerce.woocommerce-checkout table.shop_table .order-total th, .cuttz-design.woocommerce-page.woocommerce-checkout table.shop_table .order-total th, .cuttz-design.woocommerce.woocommerce-account table.shop_table .order-total th, .cuttz-design.woocommerce-page.woocommerce-account table.shop_table .order-total th, .cuttz-design.woocommerce.woocommerce-checkout table.shop_table .order-total td, .cuttz-design.woocommerce-page.woocommerce-checkout table.shop_table .order-total td, .cuttz-design.woocommerce.woocommerce-account table.shop_table .order-total td, .cuttz-design.woocommerce-page.woocommerce-account table.shop_table .order-total td {
+  border-top: 2px solid #ddd;
+  text-transform: uppercase;
+}
+.cuttz-design.woocommerce.woocommerce-checkout table.shop_table .cart-subtotal th, .cuttz-design.woocommerce-page.woocommerce-checkout table.shop_table .cart-subtotal th, .cuttz-design.woocommerce.woocommerce-account table.shop_table .cart-subtotal th, .cuttz-design.woocommerce-page.woocommerce-account table.shop_table .cart-subtotal th, .cuttz-design.woocommerce.woocommerce-checkout table.shop_table .cart-subtotal td, .cuttz-design.woocommerce-page.woocommerce-checkout table.shop_table .cart-subtotal td, .cuttz-design.woocommerce.woocommerce-account table.shop_table .cart-subtotal td, .cuttz-design.woocommerce-page.woocommerce-account table.shop_table .cart-subtotal td, .cuttz-design.woocommerce.woocommerce-checkout table.shop_table .shipping th, .cuttz-design.woocommerce-page.woocommerce-checkout table.shop_table .shipping th, .cuttz-design.woocommerce.woocommerce-account table.shop_table .shipping th, .cuttz-design.woocommerce-page.woocommerce-account table.shop_table .shipping th, .cuttz-design.woocommerce.woocommerce-checkout table.shop_table .shipping td, .cuttz-design.woocommerce-page.woocommerce-checkout table.shop_table .shipping td, .cuttz-design.woocommerce.woocommerce-account table.shop_table .shipping td, .cuttz-design.woocommerce-page.woocommerce-account table.shop_table .shipping td {
+  border-top: 1px solid #ddd;
+}
+.cuttz-design.woocommerce.woocommerce-checkout table.shop_table .product-quantity, .cuttz-design.woocommerce-page.woocommerce-checkout table.shop_table .product-quantity, .cuttz-design.woocommerce.woocommerce-account table.shop_table .product-quantity, .cuttz-design.woocommerce-page.woocommerce-account table.shop_table .product-quantity {
+  font-weight: normal;
+  color: #2980b9;
+}
+.cuttz-design.woocommerce.woocommerce-checkout #payment, .cuttz-design.woocommerce-page.woocommerce-checkout #payment, .cuttz-design.woocommerce.woocommerce-account #payment, .cuttz-design.woocommerce-page.woocommerce-account #payment {
+  background: none;
+  border-radius: 0;
+}
+.cuttz-design.woocommerce.woocommerce-checkout #payment .payment_methods, .cuttz-design.woocommerce-page.woocommerce-checkout #payment .payment_methods, .cuttz-design.woocommerce.woocommerce-account #payment .payment_methods, .cuttz-design.woocommerce-page.woocommerce-account #payment .payment_methods {
+  border-bottom: 0 none;
+}
+.cuttz-design.woocommerce.woocommerce-checkout #payment div.payment_box, .cuttz-design.woocommerce-page.woocommerce-checkout #payment div.payment_box, .cuttz-design.woocommerce.woocommerce-account #payment div.payment_box, .cuttz-design.woocommerce-page.woocommerce-account #payment div.payment_box {
+  width: auto;
+  background-color: #f8f8f8;
+  padding: 0.85em 1em;
+}
+.cuttz-design.woocommerce.woocommerce-checkout #payment div.payment_box:before, .cuttz-design.woocommerce-page.woocommerce-checkout #payment div.payment_box:before, .cuttz-design.woocommerce.woocommerce-account #payment div.payment_box:before, .cuttz-design.woocommerce-page.woocommerce-account #payment div.payment_box:before {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #f8f8f8;
+  top: -2px;
+}
+.cuttz-design.woocommerce.woocommerce-order-received table.shop_table, .cuttz-design.woocommerce-page.woocommerce-order-received table.shop_table, .cuttz-design.woocommerce.woocommerce-account table.shop_table, .cuttz-design.woocommerce-page.woocommerce-account table.shop_table {
+  border: 1px solid #ddd;
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  border-radius: 3px;
+}
+.cuttz-design.woocommerce.woocommerce-order-received table.shop_table th, .cuttz-design.woocommerce-page.woocommerce-order-received table.shop_table th, .cuttz-design.woocommerce.woocommerce-account table.shop_table th, .cuttz-design.woocommerce-page.woocommerce-account table.shop_table th {
+  padding: 4px 8px 4px 0;
+  font-size: 1em;
+}
+.cuttz-design.woocommerce.woocommerce-order-received table.shop_table td, .cuttz-design.woocommerce-page.woocommerce-order-received table.shop_table td, .cuttz-design.woocommerce.woocommerce-account table.shop_table td, .cuttz-design.woocommerce-page.woocommerce-account table.shop_table td {
+  padding: 4px 8px 4px 0;
+}
+.cuttz-design.woocommerce.woocommerce-order-received table.shop_table tfoot tr:first-of-type th, .cuttz-design.woocommerce-page.woocommerce-order-received table.shop_table tfoot tr:first-of-type th, .cuttz-design.woocommerce.woocommerce-account table.shop_table tfoot tr:first-of-type th, .cuttz-design.woocommerce-page.woocommerce-account table.shop_table tfoot tr:first-of-type th, .cuttz-design.woocommerce.woocommerce-order-received table.shop_table tfoot tr:first-of-type td, .cuttz-design.woocommerce-page.woocommerce-order-received table.shop_table tfoot tr:first-of-type td, .cuttz-design.woocommerce.woocommerce-account table.shop_table tfoot tr:first-of-type td, .cuttz-design.woocommerce-page.woocommerce-account table.shop_table tfoot tr:first-of-type td {
+  border-top: 1px solid #ddd;
+}
+.cuttz-design.woocommerce.woocommerce-order-received table.shop_table tfoot tr:last-of-type th, .cuttz-design.woocommerce-page.woocommerce-order-received table.shop_table tfoot tr:last-of-type th, .cuttz-design.woocommerce.woocommerce-account table.shop_table tfoot tr:last-of-type th, .cuttz-design.woocommerce-page.woocommerce-account table.shop_table tfoot tr:last-of-type th, .cuttz-design.woocommerce.woocommerce-order-received table.shop_table tfoot tr:last-of-type td, .cuttz-design.woocommerce-page.woocommerce-order-received table.shop_table tfoot tr:last-of-type td, .cuttz-design.woocommerce.woocommerce-account table.shop_table tfoot tr:last-of-type td, .cuttz-design.woocommerce-page.woocommerce-account table.shop_table tfoot tr:last-of-type td {
+  border-top: 2px solid #ddd;
+}
+.cuttz-design.woocommerce.woocommerce-order-received table.shop_table.customer_details td, .cuttz-design.woocommerce-page.woocommerce-order-received table.shop_table.customer_details td, .cuttz-design.woocommerce.woocommerce-account table.shop_table.customer_details td, .cuttz-design.woocommerce-page.woocommerce-account table.shop_table.customer_details td {
+  border-top: 1px solid #ddd;
+}
+.cuttz-design.woocommerce.woocommerce-order-received table.shop_table.customer_details tr:first-of-type td, .cuttz-design.woocommerce-page.woocommerce-order-received table.shop_table.customer_details tr:first-of-type td, .cuttz-design.woocommerce.woocommerce-account table.shop_table.customer_details tr:first-of-type td, .cuttz-design.woocommerce-page.woocommerce-account table.shop_table.customer_details tr:first-of-type td {
+  border-top: 0 none;
+}
+.cuttz-design.woocommerce.woocommerce-order-received table.shop_table.order_details .product-name small a, .cuttz-design.woocommerce-page.woocommerce-order-received table.shop_table.order_details .product-name small a, .cuttz-design.woocommerce.woocommerce-account table.shop_table.order_details .product-name small a, .cuttz-design.woocommerce-page.woocommerce-account table.shop_table.order_details .product-name small a {
+  background: #0af;
+  color: #fff;
+  padding: 0.1em 0.85em;
+  border: 0 none;
+}
+.cuttz-design.woocommerce.woocommerce-account table.shop_table.my_account_orders, .cuttz-design.woocommerce-page.woocommerce-account table.shop_table.my_account_orders {
+  padding: 8px 15px;
+  background-color: #fff;
+}
+.cuttz-design.woocommerce.woocommerce-account table.shop_table.my_account_orders th, .cuttz-design.woocommerce-page.woocommerce-account table.shop_table.my_account_orders th {
+  text-transform: capitalize;
+}
+.cuttz-design.woocommerce.woocommerce-account .addresses .title .edit, .cuttz-design.woocommerce-page.woocommerce-account .addresses .title .edit {
+  background-color: #1abc9c;
+  border-radius: 2px;
+  color: #fff;
+  float: none;
+  font-size: 0.85em;
+  margin-left: 1em;
+  padding: 0.15em 0.5em;
+  position: relative;
+  text-decoration: none;
+  top: 1.2em;
+}
+.cuttz-design.woocommerce.woocommerce-account .form-row, .cuttz-design.woocommerce-page.woocommerce-account .form-row {
+  padding: 0;
+}
+.cuttz-design.woocommerce.woocommerce-account .order-again, .cuttz-design.woocommerce-page.woocommerce-account .order-again, .cuttz-design.woocommerce.woocommerce-account form .button, .cuttz-design.woocommerce-page.woocommerce-account form .button {
+  margin-top: 1.618em;
+}
+.cuttz-design.woocommerce.woocommerce-account .digital-downloads li:before, .cuttz-design.woocommerce-page.woocommerce-account .digital-downloads li:before {
+  color: #1abc9c;
+}
+.cuttz-design.woocommerce.woocommerce-account .digital-downloads a, .cuttz-design.woocommerce-page.woocommerce-account .digital-downloads a {
+  background-color: #f2f5f7;
+  border: 1px solid #1abc9c;
+  border-radius: 2px;
+  color: #1abc9c;
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  text-decoration: none;
+}
+.cuttz-design.woocommerce.woocommerce-view-order mark, .cuttz-design.woocommerce-page.woocommerce-view-order mark {
+  background: none;
+  color: inherit;
+}
+.cuttz-design.woocommerce.woocommerce-view-order mark.order-status, .cuttz-design.woocommerce-page.woocommerce-view-order mark.order-status {
+  font-weight: bold;
+  color: #1abc9c;
+}
+.cuttz-design.woocommerce.woocommerce-view-order table.shop_table th, .cuttz-design.woocommerce-page.woocommerce-view-order table.shop_table th {
+  font-size: 1em;
+}
+.cuttz-design.woocommerce.woocommerce-edit-account fieldset, .cuttz-design.woocommerce-page.woocommerce-edit-account fieldset {
+  border: 0 none;
+  margin: 1.618em 0 1em;
+  padding: 0;
+}
+.cuttz-design.woocommerce.woocommerce-edit-account fieldset > legend, .cuttz-design.woocommerce-page.woocommerce-edit-account fieldset > legend {
+  padding: 0;
+}
+.cuttz-design.woocommerce.woocommerce-edit-account fieldset legend, .cuttz-design.woocommerce-page.woocommerce-edit-account fieldset legend {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-bottom: 0.618em;
+}
+.cuttz-design.woocommerce div.product .price, .cuttz-design.woocommerce-page div.product .price {
+  color: inherit;
+}
+.cuttz-design.woocommerce div.product .price del, .cuttz-design.woocommerce-page div.product .price del {
+  display: inline-block;
+  opacity: 0.8;
+  font-size: 0.85em;
+}
+.cuttz-design.woocommerce div.product .price ins, .cuttz-design.woocommerce-page div.product .price ins {
+  font-weight: normal;
+  text-decoration: none;
+}
+.cuttz-design.woocommerce div.product .posted_in > a, .cuttz-design.woocommerce-page div.product .posted_in > a {
+  background-color: #1abc9c;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 0.85em;
+  padding: 3px 6px;
+}
+.cuttz-design.woocommerce div.product form.cart div.quantity, .cuttz-design.woocommerce-page div.product form.cart div.quantity {
+  margin-right: 15px;
+}
+.cuttz-design.woocommerce div.product .quantity .qty, .cuttz-design.woocommerce-page div.product .quantity .qty {
+  padding: 0.5em 0.309em 0.5em 0.618em;
+}
+.cuttz-design.woocommerce div.product .woocommerce-tabs ul.tabs, .cuttz-design.woocommerce-page div.product .woocommerce-tabs ul.tabs {
+  padding: 0;
+}
+.cuttz-design.woocommerce div.product .woocommerce-tabs ul.tabs:before, .cuttz-design.woocommerce-page div.product .woocommerce-tabs ul.tabs:before {
+  border-bottom: 3px solid #07a384;
+}
+.cuttz-design.woocommerce div.product .woocommerce-tabs ul.tabs li, .cuttz-design.woocommerce-page div.product .woocommerce-tabs ul.tabs li {
+  background-color: #eee;
+  border-radius: 2px;
+  border: 0 none;
+  margin: 0;
+}
+.cuttz-design.woocommerce div.product .woocommerce-tabs ul.tabs li:before, .cuttz-design.woocommerce-page div.product .woocommerce-tabs ul.tabs li:before, .cuttz-design.woocommerce div.product .woocommerce-tabs ul.tabs li:after, .cuttz-design.woocommerce-page div.product .woocommerce-tabs ul.tabs li:after {
+  border-radius: 0;
+  border: 0 none;
+  box-shadow: none;
+}
+.cuttz-design.woocommerce div.product .woocommerce-tabs ul.tabs li.active, .cuttz-design.woocommerce-page div.product .woocommerce-tabs ul.tabs li.active {
+  background-color: #07a384;
+  color: #fff;
+}
+.cuttz-design.woocommerce div.product .woocommerce-tabs ul.tabs li a, .cuttz-design.woocommerce-page div.product .woocommerce-tabs ul.tabs li a {
+  font-weight: normal;
+  padding: 0.618em 0.85em;
+  outline: 0 none;
+}
+.cuttz-design.woocommerce div.product .out-of-stock, .cuttz-design.woocommerce-page div.product .out-of-stock {
+  background-color: #d15247;
+  color: #fff;
+  padding: 0.618em 1em;
+  text-align: center;
+}
+.cuttz-design.woocommerce p.stars a, .cuttz-design.woocommerce-page p.stars a {
+  color: #f8bc3a;
+}
+.cuttz-design.woocommerce .related.products, .cuttz-design.woocommerce-page .related.products, .cuttz-design.woocommerce .upsells.products, .cuttz-design.woocommerce-page .upsells.products {
+  border-top: 2px solid #eee;
+  margin-top: 2.618em;
+  padding-top: 0.618em;
+}
+.cuttz-design.woocommerce.single .price, .cuttz-design.woocommerce-page.single .price, .cuttz-design.woocommerce.single .product_meta, .cuttz-design.woocommerce-page.single .product_meta, .cuttz-design.woocommerce.single .woocommerce-product-rating, .cuttz-design.woocommerce-page.single .woocommerce-product-rating {
+  margin-bottom: 0.618em;
+}
+.cuttz-design.woocommerce.single .product_meta, .cuttz-design.woocommerce-page.single .product_meta {
+  margin-bottom: 1.618em;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  padding: 15px 0;
+}
+.cuttz-design.woocommerce.single .product_meta > span, .cuttz-design.woocommerce-page.single .product_meta > span {
+  display: block;
+}
+.cuttz-design.woocommerce .sidebar input[type="submit"], .cuttz-design.woocommerce-page .sidebar input[type="submit"] {
+  margin-top: 1em;
+}
+.cuttz-design.woocommerce .sidebar .button, .cuttz-design.woocommerce-page .sidebar .button {
+  width: auto;
+}
+.cuttz-design.woocommerce ul.cart_list li a, .cuttz-design.woocommerce-page ul.cart_list li a, .cuttz-design.woocommerce ul.product_list_widget li a, .cuttz-design.woocommerce-page ul.product_list_widget li a {
+  font-weight: normal;
+}
+.cuttz-design.woocommerce .widget_shopping_cart .total, .cuttz-design.woocommerce-page .widget_shopping_cart .total {
+  border-top: 1px solid #ddd;
+  margin-top: 10px;
+  padding: 10px 0 0;
+}
+.cuttz-design.woocommerce .widget_shopping_cart .widget_shopping_cart_content .buttons a.checkout, .cuttz-design.woocommerce-page .widget_shopping_cart .widget_shopping_cart_content .buttons a.checkout {
+  float: right;
+}
+.cuttz-design.woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content, .cuttz-design.woocommerce-page .widget_price_filter .price_slider_wrapper .ui-widget-content {
+  background-color: #fff;
+  box-shadow: 0 0 2px rgba(0, 170, 255, 0.75) inset;
+}
+.cuttz-design.woocommerce .widget_price_filter .ui-slider .ui-slider-handle, .cuttz-design.woocommerce-page .widget_price_filter .ui-slider .ui-slider-handle {
+  background-color: #0af;
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.3) inset;
+  cursor: pointer;
+}
+.cuttz-design.woocommerce .widget_price_filter .ui-slider .ui-slider-range, .cuttz-design.woocommerce-page .widget_price_filter .ui-slider .ui-slider-range {
+  background-color: #0af;
+}
+.cuttz-design.woocommerce .widget_layered_nav_filters ul li, .cuttz-design.woocommerce-page .widget_layered_nav_filters ul li {
+  float: none;
+}
+.cuttz-design.woocommerce .widget_layered_nav_filters ul li a, .cuttz-design.woocommerce-page .widget_layered_nav_filters ul li a {
+  color: inherit;
+}
+.cuttz-design.woocommerce .widget_layered_nav_filters ul li a:before, .cuttz-design.woocommerce-page .widget_layered_nav_filters ul li a:before {
+  color: #d15247;
+}
+.cuttz-design.woocommerce .widget_layered_nav ul li.chosen a:before, .cuttz-design.woocommerce-page .widget_layered_nav ul li.chosen a:before {
+  color: #d15247;
+}
+.cuttz-design.woocommerce #reviews #comments ol.commentlist .comment-text, .cuttz-design.woocommerce-page #reviews #comments ol.commentlist .comment-text {
+  border: 1px solid #ddd;
+  border-radius: 2px;
+}
+.cuttz-design.woocommerce #reviews #comments ol.commentlist li img.avatar, .cuttz-design.woocommerce-page #reviews #comments ol.commentlist li img.avatar {
+  background: #ddd;
+  border: 1px solid #ddd;
+}
+.cuttz-design.woocommerce form.checkout_coupon, .cuttz-design.woocommerce-page form.checkout_coupon, .cuttz-design.woocommerce form.login, .cuttz-design.woocommerce-page form.login, .cuttz-design.woocommerce form.register, .cuttz-design.woocommerce-page form.register {
+  background-color: #f2f5f7;
+  border: 1px solid #eee;
+  border-radius: 0;
+}
+.cuttz-design.woocommerce .woocommerce-info, .cuttz-design.woocommerce-page .woocommerce-info {
+  border-top-color: #0af;
+}
+.cuttz-design.woocommerce .woocommerce-info:before, .cuttz-design.woocommerce-page .woocommerce-info:before {
+  color: #0af;
+}
+.cuttz-design.woocommerce .woocommerce-message, .cuttz-design.woocommerce-page .woocommerce-message {
+  border-top-color: #1abc9c;
+}
+.cuttz-design.woocommerce .woocommerce-message:before, .cuttz-design.woocommerce-page .woocommerce-message:before {
+  color: #1abc9c;
+}
+.cuttz-design.woocommerce .woocommerce-error, .cuttz-design.woocommerce-page .woocommerce-error {
+  border-top-color: #d15247;
+}
+.cuttz-design.woocommerce .woocommerce-error:before, .cuttz-design.woocommerce-page .woocommerce-error:before {
+  color: #d15247;
+}
+/* Media Queries */@media only screen and (max-width: 1023px) {
+  .pagewidth .site-container {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .genesis-nav-menu > .right {
+    float: none;
+  }
+  .cuttz-design .nav-primary .menu li a {
+    padding: 2em 1.5em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cuttz-design .site-title, .cuttz-design .title-area {
+    text-align: center;
+  }
+  .cuttz-style-one img.slide-right, .cuttz-style-two img.slide-right {
+    margin-right: 0;
+  }
+  .cuttz-style-one img.slide-left, .cuttz-style-two img.slide-left {
+    margin-left: 0;
+  }
+  .testimonial-area .one-sixth, .testimonial-area .five-sixths {
+    float: left;
+    margin-left: 2.5641%;
+  }
+  .testimonial-area .first {
+    margin-left: 0;
+  }
+  .testimonial-area .one-sixth {
+    width: 14.5299%;
+  }
+  .testimonial-area .five-sixths {
+    width: 82.906%;
+  }
+  .cuttz-design .nav-primary .menu li a {
+    padding: 2em 1.2em;
+  }
+  .cuttz-design ul.feature-tabs.tabs a {
+    font-size: 1em;
+  }
+  .cuttz-design .column-grid {
+    margin-bottom: 1.618em;
+  }
+  .cuttz-design .column-grid li {
+    padding: 8px 10px;
+  }
+  .cuttz-design.woocommerce.post-type-archive-product ul.products li.product, .cuttz-design.woocommerce-page.post-type-archive-product ul.products li.product {
+    width: 48%;
+    margin: 0 0 2.992em;
+  }
+  .cuttz-design.woocommerce.woocommerce-order-received table.shop_table td, .cuttz-design.woocommerce-page.woocommerce-order-received table.shop_table td, .cuttz-design.woocommerce.woocommerce-account table.shop_table td, .cuttz-design.woocommerce-page.woocommerce-account table.shop_table td {
+    padding: 8px 8px 4px 15px;
+  }
+  .woocommerce table.my_account_orders tr td.order-actions, .woocommerce-page table.my_account_orders tr td.order-actions {
+    margin-bottom: 0.618em;
+    padding-bottom: 0.618em !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .testimonial-area .one-sixth {
+    width: 23.0769%;
+  }
+  .testimonial-area .five-sixths {
+    width: 74.359%;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .cuttz-design .nav-primary .menu li a {
+    padding: 1.618em 1em;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .cuttz-design.woocommerce.woocommerce-checkout .woocommerce-checkout-review-order-table, .cuttz-design.woocommerce-page.woocommerce-checkout .woocommerce-checkout-review-order-table, .cuttz-design.woocommerce.woocommerce-account .woocommerce-checkout-review-order-table, .cuttz-design.woocommerce-page.woocommerce-account .woocommerce-checkout-review-order-table, .cuttz-design.woocommerce.woocommerce-checkout #payment, .cuttz-design.woocommerce-page.woocommerce-checkout #payment, .cuttz-design.woocommerce.woocommerce-account #payment, .cuttz-design.woocommerce-page.woocommerce-account #payment {
+    float: none;
+    width: auto;
+  }
+  .cuttz-design.woocommerce.woocommerce-checkout table.shop_table, .cuttz-design.woocommerce-page.woocommerce-checkout table.shop_table {
+    border-right: 0 none;
+    padding-right: 0;
+    width: 100%;
+    padding-bottom: 1.618em;
+    margin-bottom: 1.618em;
+    border-bottom: 1px solid #0af;
+  }
+  .woocommerce table.shop_table_responsive tr:nth-child(2n) td, .woocommerce-page table.shop_table_responsive tr:nth-child(2n) td {
+    background-color: transparent;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .cuttz-style-one img, .cuttz-style-two img {
+    display: none;
+  }
+  .woocommerce .cart-collaterals .cross-sells ul.products li, .woocommerce-page .cart-collaterals .cross-sells ul.products li {
+    width: auto;
+    float: none;
+  }
+  .woocommerce .cart-collaterals ul.products li.product:nth-child(2n), .woocommerce-page .cart-collaterals ul.products li.product:nth-child(2n) {
+    float: none;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .testimonial-area .one-sixth, .testimonial-area .five-sixths {
+    float: none;
+    margin-left: 0;
+  }
+  .testimonial-area .one-sixth {
+    display: none;
+  }
+  .testimonial-area .five-sixths {
+    width: auto;
+  }
+  .cuttz-design.woocommerce.post-type-archive-product ul.products li.product, .cuttz-design.woocommerce-page.post-type-archive-product ul.products li.product {
+    width: auto;
+  }
+  .cuttz-design.woocommerce div.product .woocommerce-tabs ul.tabs li a, .cuttz-design.woocommerce-page div.product .woocommerce-tabs ul.tabs li a {
+    padding: 0.618em 0.5em;
+  }
+}

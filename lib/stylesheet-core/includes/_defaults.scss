@@ -1,0 +1,192 @@
+/* Headings
+--------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+	color: #333;
+	font-weight: 700;
+	line-height: 1.2;
+	margin: 1.2em 0 0;
+	margin: 1em 0 0.618em;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.286em;
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.17em;
+}
+
+h4 {
+	font-size: 1em;
+}
+
+h5 {
+	font-size: 0.83em;
+}
+
+h6 {
+	font-size: 0.75em;
+}
+
+/* Objects
+--------------------------------------------- */
+
+embed, iframe, img, object, video, .wp-caption {
+	max-width: 100%;
+}
+
+img {
+	height: auto;
+	width: auto;
+	/* IE8 */
+}
+
+/* Forms
+--------------------------------------------- */
+
+input, select, textarea {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	box-shadow: 1px 1px 3px #eee inset;
+	color: #999;
+	padding: 0.618em 1em;
+	width: 100%;
+}
+
+input:focus, textarea:focus {
+	border: 1px solid #999;
+	outline: none;
+}
+
+::-moz-placeholder {
+	color: #999;
+	opacity: 1;
+}
+
+::-webkit-input-placeholder {
+	color: #999;
+}
+
+button {
+	background: #eeeeee;
+	background-image: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #cccccc));
+	background-image: -webkit-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+	background-image: -o-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+	background-image: -ms-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+	background-image: linear-gradient(to bottom, #eeeeee 0%, #cccccc 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
+	border: 3px double #aaa;
+	box-shadow: none;
+	color: #000;
+	cursor: pointer;
+	padding: 0.618em 1em;
+	text-transform: capitalize;
+	width: auto;
+	font-weight: bold;
+}
+
+input {
+	&[type="button"], &[type="reset"], &[type="submit"] {
+		background: #eeeeee;
+		background-image: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+		background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #cccccc));
+		background-image: -webkit-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+		background-image: -o-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+		background-image: -ms-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+		background-image: linear-gradient(to bottom, #eeeeee 0%, #cccccc 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
+		border: 3px double #aaa;
+		box-shadow: none;
+		color: #000;
+		cursor: pointer;
+		padding: 0.618em 1em;
+		text-transform: capitalize;
+		width: auto;
+		font-weight: bold;
+	}
+}
+
+.button, .entry-content .button {
+	background: #eeeeee;
+	background-image: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #cccccc));
+	background-image: -webkit-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+	background-image: -o-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+	background-image: -ms-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+	background-image: linear-gradient(to bottom, #eeeeee 0%, #cccccc 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
+	border: 3px double #aaa;
+	box-shadow: none;
+	color: #000;
+	cursor: pointer;
+	padding: 0.618em 1em;
+	text-transform: capitalize;
+	width: auto;
+	font-weight: bold;
+}
+
+button:hover {
+	background-color: #f15123;
+}
+
+input:hover {
+	&[type="button"], &[type="reset"], &[type="submit"] {
+		background-color: #f15123;
+	}
+}
+
+.button:hover {
+	background-color: #f15123;
+}
+
+.entry-content .button:hover {
+	background-color: #f15123;
+	color: #fff;
+}
+
+.button {
+	border-radius: 0px;
+	display: inline-block;
+}
+
+input[type="search"] {
+	&::-webkit-search-cancel-button, &::-webkit-search-results-button {
+		display: none;
+	}
+}
+
+/* Tables
+--------------------------------------------- */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	line-height: 2;
+	margin: 0.809016em 0;
+	width: 100%;
+}
+
+tbody {
+	border-bottom: 1px solid #ddd;
+}
+
+th, td {
+	text-align: left;
+}
+
+th {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+td {
+	border-top: 1px solid #ddd;
+	padding: 0.30901em 0;
+}
