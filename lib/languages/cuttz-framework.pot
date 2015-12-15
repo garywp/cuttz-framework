@@ -1,0 +1,1140 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cuttz Framework\n"
+"POT-Creation-Date: 2015-12-15 13:37+0530\n"
+"PO-Revision-Date: 2015-12-15 13:38+0530\n"
+"Last-Translator: \n"
+"Language-Team: Cuttz Framework <tech@binaryturf.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.3\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:27
+msgid "Not found, error 404"
+msgstr ""
+
+#: 404.php:32
+#, php-format
+msgid ""
+"The page you are looking for no longer exists. Perhaps you can return back "
+"to the site's <a href=\"%s\">homepage</a> and see if you can find what you "
+"are looking for. Or, you can try finding it by using the search form below."
+msgstr ""
+
+#: 404.php:39
+#, php-format
+msgid ""
+"The page you are looking for no longer exists. Perhaps you can return back "
+"to the site's <a href=\"%s\">homepage</a> and see if you can find what you "
+"are looking for. Or, you can try finding it with the information below."
+msgstr ""
+
+#: 404.php:41
+msgid "Pages:"
+msgstr ""
+
+#: 404.php:46
+msgid "Categories:"
+msgstr ""
+
+#: 404.php:51
+msgid "Authors:"
+msgstr ""
+
+#: 404.php:56
+msgid "Monthly:"
+msgstr ""
+
+#: 404.php:61
+msgid "Recent Posts:"
+msgstr ""
+
+#: comments.php:18
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:15 lib/admin/cuttz-branding-admin.php:15
+#: lib/admin/cuttz-design-settings.php:103
+msgid "genesis"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:16
+msgid "Cuttz Admin Settings"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:17
+msgid "Cuttz Settings"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:49
+msgid "Credentials"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:54
+msgid "Skin Selector"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:59
+msgid "Widget Areas"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:64
+msgid "Mobile Template Settings"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:69
+msgid "Debug Tools"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:119
+msgid ""
+"<?php\n"
+"/******** Place all your wp/php tweaks here ****************/\n"
+"/******** This is your skins functions.php file ******/\n"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:123 lib/functions/css-gen.php:1071
+msgid ""
+"/**************** Place all your css customizations in the style.scss file "
+"*****************/\n"
+"\n"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:230
+msgid ""
+"Updating Cuttz will overwrite the core skins inside Cuttz.\n"
+"If you haven't already done so, move them to cuttz-user&raquo;skins folder.\n"
+"Are you sure you ready to update Cuttz?. \"Cancel\" to stop, \"OK\" to "
+"update."
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:246
+msgid "Google Fonts API Key"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:248
+msgid ""
+"A Google Fonts API Key allows you to get the latest fonts from Google &#40;"
+"else you can only use the ones that ship with Cuttz&#41;. <a href=\"https://"
+"developers.google.com/fonts/docs/developer_api#Auth\" target=\"_blank\">Get "
+"Google Fonts API Key here.</a>"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:269
+msgid "Please select a skin to use. The following skins are available."
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:277
+msgid "Skins"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:291
+msgid "Currently there are no customizations. But you can create one."
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:297
+#, php-format
+msgid ""
+"Please go to <a href=\"%s\" >Cuttz Design</a> to set up the initial design."
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:303
+msgid "Please edit the following file(s) to customize the skin further."
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:316
+msgid "Or create a new skin"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:345
+msgid "Footer Widgets Support"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:376
+msgid "No. of Footer Widgets"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:404
+msgid "Widgets Above Header"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:429 lib/admin/cuttz-admin.php:528
+#: lib/admin/cuttz-admin.php:626
+msgid "Front Page"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:442 lib/admin/cuttz-admin.php:541
+#: lib/admin/cuttz-admin.php:639
+msgid "Posts Page"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:457 lib/admin/cuttz-admin.php:555
+#: lib/admin/cuttz-admin.php:653
+msgid "Home Page"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:470 lib/admin/cuttz-admin.php:567
+#: lib/admin/cuttz-admin.php:665
+msgid "Post"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:481 lib/admin/cuttz-admin.php:578
+#: lib/admin/cuttz-admin.php:676
+msgid "Page"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:492 lib/admin/cuttz-admin.php:589
+#: lib/admin/cuttz-admin.php:687
+msgid "Archives"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:503 lib/admin/cuttz-admin.php:600
+#: lib/admin/cuttz-admin.php:698
+msgid "404"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:511
+msgid "Widgets Below Header"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:609
+msgid "Widgets Above Footer"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:715
+msgid ""
+"Use these settings to globally enable disable the following elements on the "
+"site. These settings will only take effect when user is viewing the site on "
+"a mobile viewport."
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:716
+msgid ""
+"Note: You can also change these settings on a per page / post basis using "
+"the <strong>Cuttz Mobile Experience</strong> metabox on the page / post edit "
+"screen."
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:728 lib/functions/landing-page-settings.php:71
+#: lib/functions/landing-page-settings.php:81
+#: lib/functions/landing-page-settings.php:90
+#: lib/functions/landing-page-settings.php:101
+#: lib/functions/landing-page-settings.php:111
+#: lib/functions/mobile-template-settings.php:91
+#: lib/functions/mobile-template-settings.php:101
+#: lib/functions/mobile-template-settings.php:110
+#: lib/functions/mobile-template-settings.php:121
+#: lib/functions/mobile-template-settings.php:131
+msgid "Hide Breadcrumbs"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:748 lib/functions/landing-page-settings.php:139
+#: lib/functions/landing-page-settings.php:149
+#: lib/functions/landing-page-settings.php:158
+#: lib/functions/landing-page-settings.php:169
+#: lib/functions/landing-page-settings.php:179
+#: lib/functions/mobile-template-settings.php:160
+#: lib/functions/mobile-template-settings.php:170
+#: lib/functions/mobile-template-settings.php:179
+#: lib/functions/mobile-template-settings.php:190
+#: lib/functions/mobile-template-settings.php:200
+msgid "Hide Widgets Above Header"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:767 lib/functions/landing-page-settings.php:201
+#: lib/functions/landing-page-settings.php:211
+#: lib/functions/landing-page-settings.php:220
+#: lib/functions/landing-page-settings.php:231
+#: lib/functions/landing-page-settings.php:241
+#: lib/functions/mobile-template-settings.php:223
+#: lib/functions/mobile-template-settings.php:233
+#: lib/functions/mobile-template-settings.php:242
+#: lib/functions/mobile-template-settings.php:253
+#: lib/functions/mobile-template-settings.php:263
+msgid "Hide Widgets Below Header"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:786 lib/functions/landing-page-settings.php:263
+#: lib/functions/landing-page-settings.php:273
+#: lib/functions/landing-page-settings.php:282
+#: lib/functions/landing-page-settings.php:293
+#: lib/functions/landing-page-settings.php:303
+#: lib/functions/mobile-template-settings.php:286
+#: lib/functions/mobile-template-settings.php:296
+#: lib/functions/mobile-template-settings.php:305
+#: lib/functions/mobile-template-settings.php:316
+#: lib/functions/mobile-template-settings.php:326
+msgid "Hide Widgets Above Footer"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:805
+#: lib/functions/mobile-template-settings.php:348
+msgid "Hide Sidebar(s)"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:830 lib/functions/landing-page-settings.php:329
+#: lib/functions/mobile-template-settings.php:358
+msgid "Hide Footer Widgets"
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:889
+msgid ""
+"For troubleshooting and debugging purposes, you can enable or disable "
+"certain functionality from right here."
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:899
+msgid "Show default content in empty widget areas."
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:910
+msgid "Uncheck to hide default content inside empty widget areas."
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:932 lib/admin/cuttz-admin.php:949
+#, php-format
+msgid "Uncheck to disable user functions stored in %s."
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:935
+msgid "Enable master &ldquo;functions.php&rdquo;."
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:965 lib/admin/cuttz-admin.php:982
+#, php-format
+msgid "Uncheck to disable user styles stored in %s."
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:968
+msgid "Enable master &ldquo;style.scss&rdquo;."
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:1007
+msgid "Enable skin specific &ldquo;functions.php&ldquo;."
+msgstr ""
+
+#: lib/admin/cuttz-admin.php:1040
+msgid "Enable skin specific &ldquo;style.scss&rdquo;."
+msgstr ""
+
+#: lib/admin/cuttz-branding-admin.php:16 lib/admin/cuttz-branding-admin.php:17
+msgid "Cuttz Branding"
+msgstr ""
+
+#: lib/admin/cuttz-branding-admin.php:65
+msgid "Current Favicon:"
+msgstr ""
+
+#: lib/admin/cuttz-branding-admin.php:86
+msgid "Current Logo:"
+msgstr ""
+
+#: lib/admin/cuttz-branding-admin.php:102
+msgid "Upload Favicon"
+msgstr ""
+
+#: lib/admin/cuttz-branding-admin.php:109
+msgid "This will delete your previous favicon!"
+msgstr ""
+
+#: lib/admin/cuttz-branding-admin.php:113
+msgid "Favicon Specifications &mdash;"
+msgstr ""
+
+#: lib/admin/cuttz-branding-admin.php:116
+msgid "Must be 32px X 32px and must be of the type"
+msgstr ""
+
+#: lib/admin/cuttz-branding-admin.php:124
+msgid "Upload Logo"
+msgstr ""
+
+#: lib/admin/cuttz-branding-admin.php:130
+msgid "This will delete your previous logo!"
+msgstr ""
+
+#: lib/admin/cuttz-branding-admin.php:151
+msgid "Logo Specifications &mdash;"
+msgstr ""
+
+#: lib/admin/cuttz-branding-admin.php:155
+#, php-format
+msgid "The image should be at least %dpx wide (the largest column layout). "
+msgstr ""
+
+#: lib/admin/cuttz-branding-admin.php:158
+#, php-format
+msgid ""
+"The content inside the image should not exceed %dpx (the smallest column "
+"layout)."
+msgstr ""
+
+#: lib/admin/cuttz-branding-admin.php:161
+#, php-format
+msgid ""
+"The trademark should be positioned at least %dpx away from the left edge of "
+"the image."
+msgstr ""
+
+#: lib/admin/cuttz-branding-admin.php:164
+msgid "The trademark should be vertically centred in the image."
+msgstr ""
+
+#: lib/admin/cuttz-branding-admin.php:167
+msgid ""
+"To create your logo, please use the default-logo.psd that you received with "
+"the purchase."
+msgstr ""
+
+#: lib/admin/cuttz-branding-admin.php:172
+msgid "To remove logo or favicon just remove or rename those files."
+msgstr ""
+
+#: lib/admin/cuttz-branding-admin.php:178
+msgid "Upload"
+msgstr ""
+
+#: lib/admin/cuttz-branding-admin.php:180
+msgid "Maximum File Size:"
+msgstr ""
+
+#: lib/admin/cuttz-branding-admin.php:185
+msgid "File Types:"
+msgstr ""
+
+#: lib/admin/cuttz-branding-admin.php:228
+msgid "Favicon updated. Old favicon purged."
+msgstr ""
+
+#: lib/admin/cuttz-branding-admin.php:230
+#: lib/admin/cuttz-branding-admin.php:255
+msgid "Couldn't move file."
+msgstr ""
+
+#: lib/admin/cuttz-branding-admin.php:232
+msgid " Destination is not writable."
+msgstr ""
+
+#: lib/admin/cuttz-branding-admin.php:236
+#: lib/admin/cuttz-branding-admin.php:261
+msgid "File type not allowed"
+msgstr ""
+
+#: lib/admin/cuttz-branding-admin.php:252
+msgid "Logo updated. Old logo purged."
+msgstr ""
+
+#: lib/admin/cuttz-branding-admin.php:257
+msgid "Destination is not writable."
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:104
+#, php-format
+msgid "&#8220;%s&#8221; Skin Design &mdash; Cuttz Framework"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:105
+msgid "Cuttz Skin Design"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:110
+#, php-format
+msgid "Save %s Options"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:111
+#, php-format
+msgid "Reset %s To Defaults"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:255
+msgid "Layout Widths"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:260
+msgid "Layout Styles"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:265
+msgid "Body Font &amp; Globals"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:270
+msgid "Site Header"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:275
+msgid "Primary Navigation Menu"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:280
+msgid "Secondary Navigation Menu"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:285
+msgid "Content Headlines"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:290
+msgid "Byline and Post Meta Data"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:295
+msgid "Sidebars"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:300
+msgid "Footer Widgets"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:305
+msgid "Footer"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:498
+msgid "Select Layout Style"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:504
+#: lib/functions/cuttz-custom-layout-style.php:45
+msgid "Full-Width"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:507
+#: lib/functions/cuttz-custom-layout-style.php:47
+msgid "Page-Width"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:522
+msgid "Layout For bbPress"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:530
+msgid "Genesis Default"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:544
+msgid "Layout Colors"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:547
+msgid ""
+"Add some personal flair to your skin by using the controls below. You'll "
+"find even more controls in the other boxes in this section, so you've got "
+"lots of ways to let your creativity flow!"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:556
+msgid "Body Background Color"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:574
+msgid "Wrap Background Color"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:602
+msgid "Genesis Layout Widths"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:605
+msgid ""
+"You can use these settings to specify the column widths and padding between "
+"the columns across all six Genesis layouts."
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:614
+msgid "Padding Between Columns"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:630
+msgid "Single Column Layout"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:639
+#: lib/admin/cuttz-design-settings.php:667
+#: lib/admin/cuttz-design-settings.php:711
+msgid "Content Column Width"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:653
+#: lib/admin/cuttz-design-settings.php:679
+#: lib/admin/cuttz-design-settings.php:723
+msgid ""
+"<strong>Tip: </strong>Make this a total of <span class=\"ans\"></span> to "
+"keep the page-width consistent across different layouts."
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:658
+msgid "Two Column Layout"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:687
+#: lib/admin/cuttz-design-settings.php:731
+msgid "Primary Sidebar Width"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:701
+msgid "Three Column Layout"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:748
+msgid "Secondary Sidebar Width"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:778
+msgid "Primary Font Family"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:800
+msgid "Primary Font Size"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:818
+#: lib/admin/cuttz-design-settings.php:2213
+msgid "Primary Font Variant"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:844
+#: lib/admin/cuttz-design-settings.php:1046
+#: lib/admin/cuttz-design-settings.php:1138
+#: lib/admin/cuttz-design-settings.php:1237
+#: lib/admin/cuttz-design-settings.php:1307
+#: lib/admin/cuttz-design-settings.php:1953
+#: lib/admin/cuttz-design-settings.php:2052
+#: lib/admin/cuttz-design-settings.php:2140
+#: lib/admin/cuttz-design-settings.php:2239
+#: lib/admin/cuttz-design-settings.php:2328
+#: lib/admin/cuttz-design-settings.php:2423
+msgid "Text Color"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:862
+msgid "Link Color"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:882
+msgid "Link Hover Color"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:901
+msgid "Form Fields Font Family"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:923
+msgid "Form-Fields Font Size"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:943
+msgid "Form Fields Color"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:972
+msgid "Customize The Look Of Site-Title."
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:981
+#: lib/admin/cuttz-design-settings.php:1073
+#: lib/admin/cuttz-design-settings.php:1172
+#: lib/admin/cuttz-design-settings.php:1260
+#: lib/admin/cuttz-design-settings.php:1336
+#: lib/admin/cuttz-design-settings.php:1888
+#: lib/admin/cuttz-design-settings.php:1987
+#: lib/admin/cuttz-design-settings.php:2075
+#: lib/admin/cuttz-design-settings.php:2174
+#: lib/admin/cuttz-design-settings.php:2263
+#: lib/admin/cuttz-design-settings.php:2358
+msgid "Font Family"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:1002
+#: lib/admin/cuttz-design-settings.php:1094
+#: lib/admin/cuttz-design-settings.php:1193
+#: lib/admin/cuttz-design-settings.php:1357
+#: lib/admin/cuttz-design-settings.php:1630
+#: lib/admin/cuttz-design-settings.php:1909
+#: lib/admin/cuttz-design-settings.php:2008
+#: lib/admin/cuttz-design-settings.php:2096
+#: lib/admin/cuttz-design-settings.php:2195
+#: lib/admin/cuttz-design-settings.php:2284
+#: lib/admin/cuttz-design-settings.php:2379
+msgid "Font Size"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:1020
+#: lib/admin/cuttz-design-settings.php:1112
+#: lib/admin/cuttz-design-settings.php:1211
+#: lib/admin/cuttz-design-settings.php:1281
+#: lib/admin/cuttz-design-settings.php:1375
+#: lib/admin/cuttz-design-settings.php:1648
+#: lib/admin/cuttz-design-settings.php:1927
+#: lib/admin/cuttz-design-settings.php:2026
+#: lib/admin/cuttz-design-settings.php:2114
+#: lib/admin/cuttz-design-settings.php:2302
+#: lib/admin/cuttz-design-settings.php:2397
+msgid "Font Variant"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:1065
+msgid "Customize The Look Of Site-Tagline."
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:1164
+msgid "Post Titles"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:1252
+msgid "Headlines Inside The Post Body"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:1401
+msgid "Nav Menu Text Color"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:1419
+msgid "Nav Menu Hover Text Color"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:1437
+#: lib/admin/cuttz-design-settings.php:1710
+msgid "Current Link Text Color"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:1455
+#: lib/admin/cuttz-design-settings.php:1728
+msgid "Parent Nav Link Text Color"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:1473
+msgid "Nav Menu Link Background Color"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:1491
+msgid "Nav Menu Link Hover Background Color"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:1509
+#: lib/admin/cuttz-design-settings.php:1782
+msgid "Current Link Background Color"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:1527
+#: lib/admin/cuttz-design-settings.php:1800
+msgid "Parent Nav Link Background Color"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:1545
+#: lib/admin/cuttz-design-settings.php:1818
+msgid "Nav Menu Border Width"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:1563
+#: lib/admin/cuttz-design-settings.php:1836
+msgid "Nav Menu Border Color"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:1581
+#: lib/admin/cuttz-design-settings.php:1854
+msgid "Submenu Width"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:1674
+msgid "Menu Text Color"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:1692
+msgid "Menu Hover Text Color"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:1746
+msgid "Menu Link Background Color"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:1764
+msgid "Menu Link Hover Background Color"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:1880
+msgid ""
+"These settings affect the post bylines (entry-meta) of the posts & pages."
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:1979
+msgid "Sidebar Widget Headings"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:2067
+msgid "Sidebar Widget Body"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:2166
+msgid "Footer Widget Headings"
+msgstr ""
+
+#: lib/admin/cuttz-design-settings.php:2254
+msgid "Footer Widget Body"
+msgstr ""
+
+#: lib/functions/css-gen.php:989
+#, php-format
+msgid "<p>Cuttz Notice: The %s file is not writable.</p>"
+msgstr ""
+
+#: lib/functions/css-gen.php:1046
+msgid ""
+"Do not edit this file directly. It's always overwritten upon saving of "
+"settings."
+msgstr ""
+
+#: lib/functions/css-gen.php:1075
+msgid ""
+"<?php\n"
+"/******** Place all your wp/php tweaks here ****************/\n"
+"/******** This is your master functions.php file ******/\n"
+msgstr ""
+
+#: lib/functions/cuttz-custom-layout-style.php:19
+msgid "Cuttz Custom Layout Style Selector"
+msgstr ""
+
+#: lib/functions/cuttz-custom-layout-style.php:39
+#, php-format
+msgid ""
+"Select a custom page layout style for this %s, if you want it to be "
+"different from the default theme layout style."
+msgstr ""
+
+#: lib/functions/cuttz-custom-layout-style.php:42
+msgid "Theme Default"
+msgstr ""
+
+#: lib/functions/cuttz-custom-template-box.php:16
+msgid "Template"
+msgstr ""
+
+#: lib/functions/cuttz-custom-template-box.php:34
+msgid "Select the page template to be used for this page."
+msgstr ""
+
+#: lib/functions/cuttz-woocommerce.php:92
+msgid "Out of Stock"
+msgstr ""
+
+#: lib/functions/landing-page-settings.php:18
+msgid "Cuttz Landing Page Experience"
+msgstr ""
+
+#: lib/functions/landing-page-settings.php:57
+#: lib/functions/mobile-template-settings.php:76
+msgid "Hide Header"
+msgstr ""
+
+#: lib/functions/landing-page-settings.php:120
+#: lib/functions/mobile-template-settings.php:140
+msgid "Hide Page Title"
+msgstr ""
+
+#: lib/functions/landing-page-settings.php:316
+#: lib/functions/mobile-template-settings.php:339
+msgid "Hide After Entry Widgets"
+msgstr ""
+
+#: lib/functions/landing-page-settings.php:337
+#: lib/functions/mobile-template-settings.php:366
+msgid "Hide Footer"
+msgstr ""
+
+#: lib/functions/landing-sections-mgt.php:34
+msgid "Cuttz Landing Sections"
+msgstr ""
+
+#: lib/functions/landing-sections-mgt.php:41
+msgid "Cuttz Landing Pages Sections are not available on the posts page."
+msgstr ""
+
+#: lib/functions/landing-sections-mgt.php:46
+msgid ""
+"Cuttz Landing Pages Sections are not available on WooCommerce Shop page."
+msgstr ""
+
+#: lib/functions/landing-sections-mgt.php:111
+msgid "Hide on Desktop"
+msgstr ""
+
+#: lib/functions/landing-sections-mgt.php:125
+msgid "Hide on Mobile"
+msgstr ""
+
+#: lib/functions/landing-sections-mgt.php:219
+msgid "Landing Section After Header First"
+msgstr ""
+
+#: lib/functions/landing-sections-mgt.php:225
+msgid "Landing Section After Header Second"
+msgstr ""
+
+#: lib/functions/landing-sections-mgt.php:231
+msgid "Landing Section After Header Third"
+msgstr ""
+
+#: lib/functions/landing-sections-mgt.php:238
+msgid "Landing Section Before Footer First"
+msgstr ""
+
+#: lib/functions/landing-sections-mgt.php:244
+msgid "Landing Section Before Footer Second"
+msgstr ""
+
+#: lib/functions/landing-sections-mgt.php:250
+msgid "Landing Section Before Footer Third"
+msgstr ""
+
+#: lib/functions/menu-mgt.php:17
+msgid "Cuttz Custom Menu Locations"
+msgstr ""
+
+#: lib/functions/menu-mgt.php:46 lib/functions/menu-mgt.php:190
+#, php-format
+msgid "Select which custom menu appears in each location for this %s."
+msgstr ""
+
+#: lib/functions/menu-mgt.php:47 lib/functions/menu-mgt.php:203
+#, php-format
+msgid ""
+"Only the menu locations for which the menus have been assigned on %sMenus%s "
+"screen will appear here."
+msgstr ""
+
+#: lib/functions/menu-mgt.php:188
+msgid "Custom Menu Settings"
+msgstr ""
+
+#: lib/functions/menu-mgt.php:195
+msgid "Theme Location"
+msgstr ""
+
+#: lib/functions/menu-mgt.php:196
+msgid "Assigned Menu"
+msgstr ""
+
+#: lib/functions/misc.php:192
+#, php-format
+msgid "Cuttz Skin Settings &mdash; %s"
+msgstr ""
+
+#: lib/functions/misc.php:198
+msgid " Admin Settings"
+msgstr ""
+
+#: lib/functions/misc.php:480
+msgid "Copyright"
+msgstr ""
+
+#: lib/functions/misc.php:480
+msgid "All Rights Reserved"
+msgstr ""
+
+#: lib/functions/misc.php:480
+msgid "Powered by"
+msgstr ""
+
+#: lib/functions/misc.php:623
+msgid "Read more"
+msgstr ""
+
+#: lib/functions/misc.php:634
+msgid "Newer"
+msgstr ""
+
+#: lib/functions/misc.php:644
+msgid "Older"
+msgstr ""
+
+#: lib/functions/misc.php:678
+msgid "Layout Settings"
+msgstr ""
+
+#: lib/functions/misc.php:963
+msgid "Before Header Widget Area"
+msgstr ""
+
+#: lib/functions/misc.php:991
+msgid "After Header Widget Area"
+msgstr ""
+
+#: lib/functions/misc.php:1018
+msgid "Above Footer Widget Area"
+msgstr ""
+
+#: lib/functions/misc.php:1033
+msgid "Before Header"
+msgstr ""
+
+#: lib/functions/misc.php:1035
+msgid "These widgets will show up above the header."
+msgstr ""
+
+#: lib/functions/misc.php:1038
+msgid "After Header"
+msgstr ""
+
+#: lib/functions/misc.php:1040
+msgid "These widgets will show up below the header."
+msgstr ""
+
+#: lib/functions/misc.php:1043
+msgid "Above Footer"
+msgstr ""
+
+#: lib/functions/misc.php:1045
+msgid ""
+"These widgets will show up above the footer or the footer widgets if they "
+"are enabled."
+msgstr ""
+
+#: lib/functions/misc.php:1129
+msgid "Cuttz Framework Help &amp; Support"
+msgstr ""
+
+#: lib/functions/misc.php:1133
+msgid "Getting Started"
+msgstr ""
+
+#: lib/functions/misc.php:1136
+msgid "Docs &amp; References"
+msgstr ""
+
+#: lib/functions/misc.php:1139
+msgid "Report a Bug"
+msgstr ""
+
+#: lib/functions/misc.php:1142
+msgid "Tweet us your new design"
+msgstr ""
+
+#: lib/functions/misc.php:1151
+msgid "Share Your Success Story"
+msgstr ""
+
+#: lib/functions/misc.php:1153
+#, php-format
+msgid ""
+"Share you success story with Cuttz Framework. And we may even feature you in "
+"our %sfeatured developers%s list!"
+msgstr ""
+
+#: lib/functions/misc.php:1154
+msgid "Share your success story!"
+msgstr ""
+
+#: lib/functions/misc.php:1155
+#, php-format
+msgid "%s%s%s"
+msgstr ""
+
+#: lib/functions/mobile-template-settings.php:19
+msgid "Cuttz Mobile Experience"
+msgstr ""
+
+#: lib/functions/mobile-template-settings.php:64
+msgid ""
+"The elements you hide here will be hidden from users visiting your site on "
+"mobile, but will still be visible to users on other viewports."
+msgstr ""
+
+#: lib/functions/mobile-template-settings.php:66
+#, php-format
+msgid ""
+"These options will override the global settings as set on %sCuttz Settings%s "
+"screen."
+msgstr ""
+
+#: lib/functions/mobile-template-settings.php:70
+msgid "Use global settings"
+msgstr ""
+
+#: lib/functions/schema-mgt.php:17
+msgid "Cuttz Schema"
+msgstr ""
+
+#: lib/functions/schema-mgt.php:34
+msgid "Cuttz Schema is not available on on the posts page."
+msgstr ""
+
+#: lib/functions/schema-mgt.php:41
+msgid ""
+"Depending on the semantics of this content you may select a specific schema "
+"to override the default."
+msgstr ""
+
+#: lib/functions/schema-mgt.php:100
+msgid "Default"
+msgstr ""
+
+#: lib/functions/schema-mgt.php:105
+msgid "About Page"
+msgstr ""
+
+#: lib/functions/schema-mgt.php:110
+msgid "Contact Page"
+msgstr ""
+
+#: lib/functions/schema-mgt.php:115
+msgid "Profile Page"
+msgstr ""
+
+#: lib/functions/schema-mgt.php:120
+msgid "QA Page"
+msgstr ""
+
+#: lib/functions/schema-mgt.php:125
+msgid "Article"
+msgstr ""
+
+#: lib/functions/schema-mgt.php:130
+msgid "Review"
+msgstr ""
+
+#: lib/functions/schema-mgt.php:135
+msgid "Recipe"
+msgstr ""
+
+#: lib/functions/shortcodes.php:121
+msgid "Click here to read more"
+msgstr ""
+
+#: search.php:22
+msgid "Search Results for:"
+msgstr ""
+
+#: skins/cuttz-design/functions.php:190 skins/femme-flora/functions.php:394
+msgctxt "cuttz-framework"
+msgid "&laquo; %title"
+msgstr ""
+
+#: skins/cuttz-design/functions.php:193 skins/femme-flora/functions.php:397
+msgctxt "cuttz-framework"
+msgid "%title &raquo;"
+msgstr ""
+
+#: skins/femme-flora/functions.php:155
+msgid "Continue Reading"
+msgstr ""
+
+#: skins/femme-flora/functions.php:190
+msgid "Continue reading"
+msgstr ""
+
+#: skins/femme-flora/functions.php:248
+#, php-format
+msgid "%sClick to read more&hellip;%s"
+msgstr ""
